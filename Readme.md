@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/29/user/1537031).
-* Наставник: `Неизвестно`.
+* Студент: [Анна Миронович](https://up.htmlacademy.ru/htmlcss/29/user/1537031).
+* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
