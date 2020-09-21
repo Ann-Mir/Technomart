@@ -11,7 +11,8 @@
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-regular.svg#Cuprum') format('svg'); /* Legacy iOS */
-  }
+    font-display: swap;
+}
   /* cuprum-italic - latin_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Cuprum';
@@ -24,7 +25,8 @@
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-italic.woff') format('woff'), /* Modern Browsers */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-italic.svg#Cuprum') format('svg'); /* Legacy iOS */
-  }
+    font-display: swap;
+ }
   /* cuprum-700 - latin_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'Cuprum';
@@ -37,6 +39,7 @@
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-700.woff') format('woff'), /* Modern Browsers */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-700.svg#Cuprum') format('svg'); /* Legacy iOS */
+    font-display: swap;     
   }
   /* cuprum-700italic - latin_cyrillic-ext_cyrillic */
   @font-face {
@@ -50,6 +53,7 @@
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-700italic.woff') format('woff'), /* Modern Browsers */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/cuprum-v12-latin_cyrillic-ext_cyrillic-700italic.svg#Cuprum') format('svg'); /* Legacy iOS */
+    font-display: swap;     
   }
   /* pt-sans-regular - latin_cyrillic-ext_cyrillic */
 @font-face {
@@ -63,7 +67,8 @@
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
-  }
+    font-display: swap;
+}
   /* pt-sans-italic - latin_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'PT Sans';
@@ -76,7 +81,8 @@
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-italic.woff') format('woff'), /* Modern Browsers */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-italic.svg#PTSans') format('svg'); /* Legacy iOS */
-  }
+    font-display: swap;
+ }
   /* pt-sans-700 - latin_cyrillic-ext_cyrillic */
   @font-face {
     font-family: 'PT Sans';
@@ -89,6 +95,7 @@
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-700.woff') format('woff'), /* Modern Browsers */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+    font-display: swap;     
   }
   /* pt-sans-700italic - latin_cyrillic-ext_cyrillic */
   @font-face {
@@ -102,5 +109,6 @@
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-700italic.woff') format('woff'), /* Modern Browsers */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/pt-sans-v12-latin_cyrillic-ext_cyrillic-700italic.svg#PTSans') format('svg'); /* Legacy iOS */
+    font-display: swap;     
   }
-  
+
