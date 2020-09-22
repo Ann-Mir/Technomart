@@ -190,25 +190,38 @@ img {
 	height: auto;
 }
 
+/* Main Header Decoration */
+
 .main-header {
 	background-color: var(--header-background-light-grey);
-}
-
-.main-navigation {
-	
-	font-size: 18px;
-	color: var(--basic-white);
-}
-
-.main-navigation a {
 	color: var(--basic-white);
 }
 
 .user-navigation {
 	background-color: var(--darken-grey);
+	font-size: 18px;
+  line-height: 24px;
+}
+
+.user-navigation a {
 	color: var(--basic-white);
 }
 
 .order-button {
 	background-color: var(--basic-green);
 }
+
+.main-header-about {
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: var(--basic-red);
+}
+
+.main-navigation {	
+	font-size: 18px;
+	color: var(--basic-white);
+}
+
+
+
