@@ -114,12 +114,14 @@
 
 /* Variables */
 :root {
-
+--basic-header-background: rgba(0, 0, 0, 0.0001);
 --basic-white: #FFFFFF;
 --basic-black: #000000;
 --basic-red: #EE3643;
+--box-shadow-red: rgba(0, 0, 0, 0.24);
 --basic-green: #63A63E;
-
+--hover-green: #5FBB2D;
+--click-green: #518534;
 --darken-grey: #293449;
 --dark-grey: #32425C;
 
@@ -127,8 +129,9 @@
 --header-background-light-grey: #F3F7F9;
 --phone-icon-grey: #B7BFC8;
 --icon-light-grey: #C5C5C5; /* catalog checkbox icons as well */
+--nav-item-click: #1D2739;
 
-/* main */
+/* INDEX */
 
 /* promo-section */
 --basic-orange: #FFBF47;
@@ -142,21 +145,26 @@
 
 /* services section */
 --basic-background-grey: #F1F5F7; /*пара слов о перфораторах */
+--slider-shadow: #405069;
 
 /*footer specific*/
 --yellow: #FFD180;
 
-/* CATLOG */
+/* CATALOG */
 
 --catalog-breadcrumbs: #C1C6CE;
 --catalog-title-background: #F2F6F8;
 --filter-background: #F7F3EC;
+--active-checkbox-grey: #B5B5B5;
+--filter-dots-grey: #ABABAB;
+--filter-slider-line: #D7DCDE;
+--filter-range-dash: #444444;
 
 /* catalog-items */
 --crossed-out-price: #A9A9A9;
+--green-button-shadow: #367315;
 
 /* pagination border */
-
 --pagination-border: #E5E5E5;
 
 }
