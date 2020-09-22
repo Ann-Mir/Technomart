@@ -218,10 +218,27 @@ img {
 	color: var(--basic-red);
 }
 
+.main-header-phone {
+	color: var(--basic-red);
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	border: 3px solid var(--basic-white);
+}
+
+.main-header-address {
+	font-size: 14px;
+	line-height: 24px;
+	color: var(--dark-grey);
+	text-align: center;
+}
 .main-navigation {	
 	font-size: 18px;
 	color: var(--basic-white);
 }
+
+
 
 
 
