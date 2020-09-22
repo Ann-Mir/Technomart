@@ -139,6 +139,9 @@
 --basic-blue: #3BBCE3;
 --light-purple: #DC91D8;
 --light-green: #8ED78F;
+--transparent-white: rgba(255, 255, 255, 0.3);
+--transparent-grey: rgba(197, 197, 197, 0.3);
+--transparent-dark-grey: rgba(169, 169, 169, 0.3);
 
 /*best-sellers & vendors sections */
 --best-sellers-vendors-background: #F9F5F0;
@@ -294,15 +297,52 @@ img {
 }
 
 /* Index Main */
-.promo-goods {
-	background-color: var(--basic-orange);
+.promo-list {
+	list-style: none;
+}
+
+.promo-list-item a {
+	color: var(--basic-white);
 }
 
 .promo-list-button {
-	opacity: 0.3;
+	background-color: var(--transparent-white);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;	
 }
 
+.promo-list-button:hover {
+	background-color: var(--transparent-grey);
+}
 
+.promo-list-button:active {
+	background-color: var(--transparent-dark-grey);
+}
+
+.promo-list-item-title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.promo-goods,
+.promo-delivery {
+	background-color: var(--basic-orange);
+}
+
+.promo-tools {
+	background-color: var(--basic-blue);
+}
+
+.promo-technics {
+	background-color: var(--light-purple);
+}
+
+.promo-sale {
+	background-color: var(--light-green);
+}
 
 
 
