@@ -294,6 +294,13 @@ img {
 }
 
 /* Index Main */
+.promo-goods {
+	background-color: var(--basic-orange);
+}
+
+.promo-list-button {
+	opacity: 0.3;
+}
 
 
 
