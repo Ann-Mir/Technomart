@@ -112,3 +112,51 @@
     font-display: swap;     
   }
 
+/* Variables */
+:root {
+
+--basic-white: #FFFFFF;
+--basic-black: #000000;
+--basic-red: #EE3643;
+--basic-green: #63A63E;
+
+--darken-grey: #293449;
+--dark-grey: #32425C;
+
+/* header specific */
+--header-background-light-grey: #F3F7F9;
+--phone-icon-grey: #B7BFC8;
+--icon-light-grey: #C5C5C5; /* catalog checkbox icons as well */
+
+/* main */
+
+/* promo-section */
+--basic-orange: #FFBF47;
+--basic-blue: #3BBCE3;
+--light-purple: #DC91D8;
+--light-green: #8ED78F;
+
+/*best-sellers & vendors sections */
+--best-sellers-vendors-background: #F9F5F0;
+--cards-border: #EAEAEA;
+
+/* services section */
+--basic-background-grey: #F1F5F7; /*пара слов о перфораторах */
+
+/*footer specific*/
+--yellow: #FFD180;
+
+/* CATLOG */
+
+--catalog-breadcrumbs: #C1C6CE;
+--catalog-title-background: #F2F6F8;
+--filter-background: #F7F3EC;
+
+/* catalog-items */
+--crossed-out-price: #A9A9A9;
+
+/* pagination border */
+
+--pagination-border: #E5E5E5;
+
+}
