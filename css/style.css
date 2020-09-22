@@ -130,6 +130,7 @@
 --phone-icon-grey: #B7BFC8;
 --icon-light-grey: #C5C5C5; /* catalog checkbox icons as well */
 --nav-item-click: #1D2739;
+--user-nav-click: #161D29;
 
 /* INDEX */
 
@@ -207,8 +208,21 @@ img {
 	color: var(--basic-white);
 }
 
+.favorites:active,
+.cart:active {
+	background-color: var(--user-nav-click);
+}
+
 .order-button {
 	background-color: var(--basic-green);
+}
+
+.order-button:hover {
+	background-color: var(--hover-green);
+}
+
+.order-button:active {
+	background-color: var(--click-green);
 }
 
 .main-header-about {
@@ -221,7 +235,7 @@ img {
 .main-header-phone {
 	color: var(--basic-red);
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: bold;
 	line-height: 30px;
 	text-align: center;
 	border: 3px solid var(--basic-white);
@@ -233,10 +247,52 @@ img {
 	color: var(--dark-grey);
 	text-align: center;
 }
-.main-navigation {	
-	font-size: 18px;
+
+.authorization-list {
+	list-style: none;
+}
+.authorization-list-item {
+	font-size: 21px;
+	line-height: 21px;
+	background: var(--basic-white);	
+}
+
+.authorization-list-item a {
+	color: var(--basic-black);
+}
+
+.authorization-list-item:hover a {
+	color: var(--basic-red);
+}
+
+.authorization-list-item:active a {
+	color: var(--icon-light-grey);
+}
+.main-navigation {
+	background-color: var(--dark-grey);	
+	font-size: 18px;	
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation-item a {
 	color: var(--basic-white);
 }
+
+.site-navigation-item:hover {
+	background-color: var(--darken-grey);
+}
+
+.site-navigation-item:active {
+	background-color: var(--nav-item-click);
+}
+
+.site-navigation-item:active a {
+	opacity: 0.5;
+}
+
 
 
 
