@@ -402,6 +402,26 @@ img {
   line-height: 20px;
 }
 
-.best-sellers-item a {
+.best-sellers-item-link {
   color: var(--basic-black);
 }
+
+.best-sellers-original-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: var(--crossed-out-price);
+  text-decoration: line-through;
+}
+
+.best-sellers-price-button {
+  background-color: var(--basic-red);
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.best-sellers-price-button a {
+  color: var(--basic-white);
+}
+
