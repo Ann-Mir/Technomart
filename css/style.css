@@ -150,6 +150,7 @@
 /* services section */
 --basic-background-grey: #F1F5F7; /*пара слов о перфораторах */
 --slider-shadow: #405069;
+--credit-button-red: #ff5357;
 
 /*footer specific*/
 --yellow: #FFD180;
@@ -363,21 +364,28 @@ img {
 }
 
 .catalog-button,
-.all-best-sellers-button {
+.all-best-sellers-button,
+.all-vendors-button,
+.credit-button,
+.about-company-button,
+.email-us-button {
   background-color: var(--basic-red);
   color: var(--basic-white);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  border: none;
 }
 
 /* Best Sellers */
 
-.best-sellers-head {
+.best-sellers-head,
+.top-vendors-header {
   background-color: var(--best-sellers-vendors-background);
 }
 
-.best-sellers-title {
+.best-sellers-title,
+.top-vendors-title {
   color: var(--dark-grey);
   font-size: 30px;
   line-height: 30px;
@@ -425,3 +433,64 @@ img {
   color: var(--basic-white);
 }
 
+/* top vendors */
+.vendors-list {
+  list-style: none;
+}
+
+/* services */
+
+.services {
+  background-color: var(--basic-background-grey);
+}
+
+.services-title,
+.services-slider-title,
+.about-company-title,
+.contacts-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.services-slider-title {
+  color: var(--dark-grey);
+}
+
+.services-slider-text,
+.company-introduction,
+.contacts-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list-item-button {
+  background-color: var(--dark-grey);
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  border: none;
+}
+
+.services-list-item-button:hover {
+  background-color: var(--darken-grey);
+}
+
+.service-active-button,
+.service-active-button:hover {
+  background-color: var(--basic-white);
+  color: var(--dark-grey);
+}
+
+.credit-button {
+  background-color: var(--credit-button-red);
+}
+
+/* about-company */
