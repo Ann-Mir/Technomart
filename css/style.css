@@ -154,6 +154,7 @@
 
 /*footer specific*/
 --yellow: #FFD180;
+--social-grey: #212A3A;
 
 /* CATALOG */
 
@@ -493,4 +494,83 @@ img {
   background-color: var(--credit-button-red);
 }
 
-/* about-company */
+/* footer */
+.page-footer {
+  color: var(--basic-white);
+}
+
+.footer-top {
+  background-color: var(--dark-grey);
+}
+
+.footer-site-navigation,
+.footer-catalog-navigation,
+.social-list {
+  list-style: none;
+}
+
+.footer-site-navigation-item-link,
+.footer-address,
+.footer-phone {
+  color: var(--basic-background-grey);
+}
+
+.footer-catalog-navigation-item-link {
+  color: var(--yellow);
+}
+
+.footer-bottom {
+  background-color: var(--darken-grey);
+  color: var(--basic-white);
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social-button {
+  color: inherit;
+  background-color: var(--social-grey);
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: var(--basic-red);
+}
+
+.footer-feedback,
+.footer-made-by {
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.footer-feedback a,
+.footer-made-by a {
+  color: var(--yellow); 
+}
+
+.footer-feedback:hover a,
+.footer-feedback:focus a,
+.footer-made-by:hover a,
+.footer-made-by:focus a,
+.footer-site-navigation-item-link:hover,
+.footer-site-navigation-item-link:focus,
+.footer-catalog-navigation-item-link:hover,
+.footer-catalog-navigation-item-link:focus {
+  text-decoration: underline;
+}
+
+.footer-site-navigation-item-link:active, 
+.footer-catalog-navigation-item-link:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-feedback:active a,
+.footer-made-by:active a {
+  color: var(--basic-red);
+  text-decoration: none;
+}
