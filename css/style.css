@@ -131,6 +131,7 @@
 --icon-light-grey: #C5C5C5; /* catalog checkbox icons as well */
 --nav-item-click: #1D2739;
 --user-nav-click: #161D29;
+--active-red: #BA2732;
 
 /* INDEX */
 
@@ -203,6 +204,17 @@ img {
 	color: var(--basic-white);
 }
 
+.button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
 .user-navigation {
 	background-color: var(--darken-grey);
 	font-size: 18px;
@@ -213,9 +225,23 @@ img {
 	color: var(--basic-white);
 }
 
+.logo {
+  background-color: var(--basic-red);
+}
+
+.logo:active {
+  background-color: var(--active-red);
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+}  
+
 .favorites:active,
 .cart:active {
-	background-color: var(--user-nav-click);
+  background-color: var(--user-nav-click);
+  opacity: 0.5;
 }
 
 .order-button {
@@ -228,7 +254,8 @@ img {
 }
 
 .order-button:active {
-	background-color: var(--click-green);
+  background-color: var(--click-green);
+  opacity: 0.5;
 }
 
 .main-header-about {
@@ -265,6 +292,7 @@ img {
 
 .authorization-list-item a {
   color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .authorization-list-item:hover a,
@@ -275,6 +303,7 @@ img {
 .authorization-list-item:active a {
 	color: var(--icon-light-grey);
 }
+
 .main-navigation {
 	background-color: var(--dark-grey);	
 	font-size: 18px;	
@@ -362,20 +391,6 @@ img {
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.catalog-button,
-.all-best-sellers-button,
-.all-vendors-button,
-.credit-button,
-.about-company-button,
-.email-us-button {
-  background-color: var(--basic-red);
-  color: var(--basic-white);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  border: none;
 }
 
 /* Best Sellers */
