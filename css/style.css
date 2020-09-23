@@ -177,7 +177,7 @@ body {
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 24px;
@@ -220,7 +220,8 @@ img {
 	background-color: var(--basic-green);
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
 	background-color: var(--hover-green);
 }
 
@@ -257,14 +258,15 @@ img {
 .authorization-list-item {
 	font-size: 21px;
 	line-height: 21px;
-	background: var(--basic-white);	
+  background: var(--basic-white);  	
 }
 
 .authorization-list-item a {
-	color: var(--basic-black);
+  color: var(--basic-black);
 }
 
-.authorization-list-item:hover a {
+.authorization-list-item:hover a,
+.authorization-list-item:focus a {
 	color: var(--basic-red);
 }
 
@@ -284,7 +286,8 @@ img {
 	color: var(--basic-white);
 }
 
-.site-navigation-item:hover {
+.site-navigation-item:hover,
+.site-navigation-item:focus {
 	background-color: var(--darken-grey);
 }
 
@@ -313,7 +316,8 @@ img {
 	text-align: center;	
 }
 
-.promo-list-button:hover {
+.promo-list-button:hover,
+.promo-list-button:focus {
 	background-color: var(--transparent-grey);
 }
 
@@ -325,6 +329,7 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
+	color: var(--basic-white);
 }
 
 .promo-goods,
@@ -344,5 +349,59 @@ img {
 	background-color: var(--light-green);
 }
 
+/* Promo slider */
+.promo-slide {
+  color: var(--basic-white);
+  background-color: var(--dark-grey);
+}
 
+.slide-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.catalog-button,
+.all-best-sellers-button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Best Sellers */
+
+.best-sellers-head {
+  background-color: var(--best-sellers-vendors-background);
+}
+
+.best-sellers-title {
+  color: var(--dark-grey);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.best-sellers-list {
+  list-style: none;
+}
+
+.best-sellers-article {
+  width: 220px;
+  height: 318px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  border: 1px solid var(--cards-border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.best-sellers-item-title {
+  line-height: 20px;
+}
+
+.best-sellers-item a {
+  color: var(--basic-black);
+}
