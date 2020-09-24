@@ -143,6 +143,7 @@
 --transparent-white: rgba(255, 255, 255, 0.3);
 --transparent-grey: rgba(197, 197, 197, 0.3);
 --transparent-dark-grey: rgba(169, 169, 169, 0.3);
+--hover-red: #CA2C37;
 
 /*best-sellers & vendors sections */
 --best-sellers-vendors-background: #F9F5F0;
@@ -391,6 +392,15 @@ img {
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+  background-color: var(--hover-red);
+}
+
+.catalog-button:active {
+  background-color: var(--active-red);
 }
 
 /* Best Sellers */
