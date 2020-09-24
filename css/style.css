@@ -159,6 +159,12 @@ img {
   border: none;
 }
 
+.special-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .user-navigation {
 	background-color: var(--darken-grey);
 	font-size: 18px;
@@ -253,10 +259,6 @@ img {
 	font-size: 18px;	
 }
 
-.site-navigation {
-	list-style: none;
-}
-
 .site-navigation-item a {
 	color: var(--basic-white);
 }
@@ -275,9 +277,6 @@ img {
 }
 
 /* Index Main */
-.promo-list {
-	list-style: none;
-}
 
 .promo-list-item a {
 	color: var(--basic-white);
@@ -361,10 +360,6 @@ img {
   text-transform: uppercase;
 }
 
-.best-sellers-list {
-  list-style: none;
-}
-
 .best-sellers-article {
   width: 220px;
   height: 318px;
@@ -401,12 +396,6 @@ img {
 .best-sellers-price-button a {
   color: var(--basic-white);
 }
-
-/* top vendors */
-.vendors-list {
-  list-style: none;
-}
-
 /* services */
 
 .services {
@@ -433,10 +422,6 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-}
-
-.services-list {
-  list-style: none;
 }
 
 .services-list-item-button {
@@ -469,12 +454,6 @@ img {
 
 .footer-top {
   background-color: var(--dark-grey);
-}
-
-.footer-site-navigation,
-.footer-catalog-navigation,
-.social-list {
-  list-style: none;
 }
 
 .footer-site-navigation-item-link,
