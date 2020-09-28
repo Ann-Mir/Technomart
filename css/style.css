@@ -185,11 +185,10 @@ img {
   background-color: var(--active-red);
 }
 
-.main-header-logo,
-.catalog-header-logo {
+.main-header-logo {
   width: 220px;
   height: 47px;
-}  
+}
 
 .favorites:active,
 .cart:active {
@@ -468,6 +467,11 @@ img {
 
 .footer-top {
   background-color: var(--dark-grey);
+}
+
+.main-footer-logo {
+  width: 220px;
+  height: 68;
 }
 
 .footer-site-navigation-item-link,
