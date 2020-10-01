@@ -6,7 +6,7 @@
     font-weight: 400;
     src: local('Cuprum Regular'), local('Cuprum-Regular'),
          url('../fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/cuprum.woff') format('woff'), /* Modern Browsers */    
+         url('../fonts/cuprum.woff') format('woff'); /* Modern Browsers */    
 }
   /* cuprum-italic */
   @font-face {
@@ -15,7 +15,7 @@
     font-weight: 400;
     src: local('Cuprum Italic'), local('Cuprum-Italic'),
          url('../fonts/cuprumitalic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/cuprumitalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cuprumitalic.woff') format('woff'); /* Modern Browsers */
  }
   /* cuprum-700 */
   @font-face {
@@ -24,7 +24,7 @@
     font-weight: 700;
     src: local('Cuprum Bold'), local('Cuprum-Bold'),
          url('../fonts/cuprumbold.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/cuprumbold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cuprumbold.woff') format('woff'); /* Modern Browsers */
   }
   /* cuprum-700italic */
   @font-face {
@@ -33,7 +33,7 @@
     font-weight: 700;
     src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
          url('../fonts/cuprumbolditalic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/cuprumbolditalic.woff') format('woff'), /* Modern Browsers */   
+         url('../fonts/cuprumbolditalic.woff') format('woff'); /* Modern Browsers */   
   }
   /* pt-sans-regular - latin_cyrillic-ext_cyrillic */
 @font-face {
@@ -42,7 +42,7 @@
     font-weight: 400;
     src: local('PT Sans'), local('PTSans-Regular'),
          url('../fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/ptsans.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/ptsans.woff') format('woff'); /* Modern Browsers */
 }
  
   /* pt-sans-700 */
@@ -52,7 +52,7 @@
     font-weight: 700;
     src: local('PT Sans Bold'), local('PTSans-Bold'),
          url('../fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/ptsansbold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/ptsansbold.woff') format('woff'); /* Modern Browsers */
   }
 
 /* Variables */
