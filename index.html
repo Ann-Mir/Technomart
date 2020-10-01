@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class="user-navigation">
+    <div class="user-navigation container">
       <a class="logo main-header-logo">
         <img class="header-logo-image" src="img/logo-technomart.svg" width="107" height="17" alt="Логотип интернет-магазина Техномарт">
       </a>
@@ -19,7 +19,7 @@
       <a class="cart" href="#">Корзина</a>
       <a class="button order-button" href="#">Оформить заказ</a>
     </div>
-    <div class="header-container">
+    <div class="header-container container">
       <span class="main-header-about">Интернет-магазин строительных материалов и инструментов для ремонта</span>
       <div class="main-header-contacts">
         <a class="main-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -56,9 +56,9 @@
       </nav>
     </div>
   </header>
-  <main class="container">
+  <main class="page-content">
     <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов</h1>
-    <section class="promo">
+    <section class="promo container">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="special-list promo-list">
         <li class="promo-list-item promo-goods">
@@ -83,11 +83,11 @@
         </li>
       </ul>
       <div class="promo-slider-container"> 
-        <div class="promo-slide">
+        <div class="promo-slide promo-slide-active">
           <img class="slide-image" src="img/perforators-slider.jpg" width="620" heigth="266" alt="Каталог перфораторов">
           <h3 class="slide-title">Перфораторы</h3>
-          <p class="slide-text">Настоящие мужские игрушки</p>
-        </div>
+          <p class="slide-text">Настоящие мужские игрушки</p>         
+        </div>       
         <div class="promo-slide">
           <img class="slide-image" src="img/drills-slider.jpg" width="620" heigth="266" alt="Каталог дрелей">
           <h3 class="slide-title">Дрели</h3>
@@ -95,12 +95,12 @@
         </div>
         <a class="button catalog-button" href="catalog.html">Открыть каталог</a>
         <button class="slider-button slider-prev-button" type="button">Назад</button>
-        <button class="slider-button slider-next-button" type="button">Вперед</button>
-      </div>
+        <button class="slider-button slider-next-button" type="button">Вперед</button>      
+      </div>    
     </section>
-    <section class="best-sellers">
+    <section class="best-sellers container">
       <div class="best-sellers-head">
-        <h2 class="best-sellers-title visually-hidden">Популярные товары:</h2>
+        <h2 class="best-sellers-title">Популярные товары:</h2>
         <a class="button all-best-sellers-button" href="#">Все популярные товары</a>
       </div>
       <ul class="special-list best-sellers-list">
@@ -146,7 +146,7 @@
         </li>
       </ul>
     </section>
-    <section class="vendors">
+    <section class="vendors container">
       <div class="top-vendors-header">
         <h2 class="top-vendors-title">Популярные производители:</h2>
         <a class="button all-vendors-button" href="#">Все производители</a>
@@ -195,49 +195,51 @@
       </ul>
     </section>
     <section class="services">
-      <h2 class="services-title">Сервисы</h2>
-      <ul class="special-list services-list">
-        <li class="services-list-item">
-          <button class="button services-list-item-button service-active-button" type="button">Доставка</button>
-        </li>
-        <li class="services-list-item">
-          <button class="button services-list-item-button" type="button">Гарантия</button>
-        </li>
-        <li class="services-list-item">
-          <button class="button services-list-item-button" type="button">Кредит</button>
-        </li>
-      </ul>
-      <div class="services-slider-container">
-        <div class="services-slide delivery-slide service-active">
-          <h3 class="services-slider-title">Доставка</h3>
-          <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!
-          </p>
-          <img src="img/delivery-service.svg" width="468" height="261" alt="Изображение грузовика">
+        <div class="container">
+        <h2 class="services-title">Сервисы</h2>
+        <ul class="special-list services-list">
+          <li class="services-list-item">
+            <button class="button services-list-item-button service-active-button" type="button">Доставка</button>
+          </li>
+          <li class="services-list-item">
+            <button class="button services-list-item-button" type="button">Гарантия</button>
+          </li>
+          <li class="services-list-item">
+            <button class="button services-list-item-button" type="button">Кредит</button>
+          </li>
+        </ul>
+        <div class="services-slider-container">
+          <div class="services-slide delivery-slide service-active">
+            <h3 class="services-slider-title">Доставка</h3>
+            <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
+            <img src="img/delivery-service.svg" width="468" height="261" alt="Изображение грузовика">
+          </div>
+          <div class="services-slide warranty-slide">
+            <h3 class="services-slider-title">Гарантия</h3>
+            <p class="services-slider-text">Если купленный у нас товар поломается или заискрит, <br>
+              а также в случае пожара, спровоцированного его <br>
+              возгоранием,  вы всегда можете быть уверены в нашей <br>
+              гарантии. Мы обменяем сгоревший товар на новый. <br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img src="img/warranty-service.svg" width="389" height="283" alt="Картинка Гарантия">
+          </div>
+          <div class="services-slide credit-slide">
+            <h3 class="services-slider-title">Кредит</h3>
+            <p class="services-slider-text">Залезть в долговую яму стало проще!  <br>
+              Кредитные консульты придут вам на помощь<br>
+            </p>
+            <img src="img/credit-service.svg" width="465" height="285" alt="Картинка Кредит">
+            <button class="button credit-button">Отправить заявку</button>  
+          </div>        
         </div>
-        <div class="services-slide warranty-slide">
-          <h3 class="services-slider-title">Гарантия</h3>
-          <p class="services-slider-text">Если купленный у нас товар поломается или заискрит, <br>
-            а также в случае пожара, спровоцированного его <br>
-            возгоранием,  вы всегда можете быть уверены в нашей <br>
-            гарантии. Мы обменяем сгоревший товар на новый. <br>
-            Дом уж восстановите как-нибудь сами.
-          </p>
-          <img src="img/warranty-service.svg" width="389" height="283" alt="Картинка Гарантия">
-        </div>
-        <div class="services-slide credit-slide">
-          <h3 class="services-slider-title">Кредит</h3>
-          <p class="services-slider-text">Залезть в долговую яму стало проще!  <br>
-            Кредитные консульты придут вам на помощь<br>
-          </p>
-          <img src="img/credit-service.svg" width="465" height="285" alt="Картинка Кредит">
-          <button class="button credit-button">Отправить заявку</button>  
-        </div>        
       </div>      
     </section>
-    <div>
+    <div class="container">
       <section class="about-company">
         <h2 class="about-company-title">Компания Техномарт</h2>
         <p class="company-introduction">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -261,7 +263,7 @@
     </div>
   </main>
   <footer class="page-footer main-footer">
-    <div class="footer-top">
+    <div class="footer-top container">
       <a class="logo main-footer-logo">
         <img class="footer-logo-image" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
       </a>
@@ -302,7 +304,7 @@
         </li>
       </ul>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom container">
       <p class="footer-copyright">© 2010–2019 Компания «Техномарт»<br>
         Все права защищены</p>
       <section class="footer-social">
