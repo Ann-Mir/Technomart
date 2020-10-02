@@ -539,18 +539,30 @@ img {
 /* services */
 
 .services {
+  padding-top: 64px;
   margin-bottom: 70px;
 }
 
-.services .container {
+.services {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: ;
+  grid-template-rows: auto 317px;
 }
 
 .services,
 .perforators-article {
   background-color: var(--basic-background-grey);
+}
+
+.services-slider {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+ 
+}
+
+.services-slide {
+  background-image: url("../img/delivery-service.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .services-title,
@@ -566,6 +578,7 @@ img {
 
 .services-slider-title {
   color: var(--dark-grey);
+  margin-top: 0;
 }
 
 .services-text,
@@ -576,6 +589,10 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+.services-slider-text {
+  margin: 0;
 }
 
 .services-list-item-button {

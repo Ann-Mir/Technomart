@@ -202,11 +202,13 @@
       </ul>
     </section>
     <section class="services">
-        <div class="container">
+      <div class="services-top container">
         <h2 class="services-title">Сервисы</h2>
         <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! 
           <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
+      </div>  
+      <div class="services-slider container">
         <ul class="special-list services-list">
           <li class="services-list-item">
             <button class="button services-list-item-button service-active-button" type="button">Доставка</button>
@@ -218,36 +220,38 @@
             <button class="button services-list-item-button" type="button">Кредит</button>
           </li>
         </ul>
-        <div class="services-slider-container">
-          <div class="services-slide delivery-slide service-active">
+        <div class="services-slide delivery-slide service-active">
+          <div class="service-description">
             <h3 class="services-slider-title">Доставка</h3>
             <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
             </p>
-            <img src="img/delivery-service.svg" width="468" height="261" alt="Изображение грузовика">
           </div>
-          <div class="services-slide warranty-slide">
-            <h3 class="services-slider-title">Гарантия</h3>
-            <p class="services-slider-text">Если купленный у нас товар поломается или заискрит, <br>
-              а также в случае пожара, спровоцированного его <br>
-              возгоранием,  вы всегда можете быть уверены в нашей <br>
-              гарантии. Мы обменяем сгоревший товар на новый. <br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
-            <img src="img/warranty-service.svg" width="389" height="283" alt="Картинка Гарантия">
-          </div>
-          <div class="services-slide credit-slide">
-            <h3 class="services-slider-title">Кредит</h3>
-            <p class="services-slider-text">Залезть в долговую яму стало проще!  <br>
-              Кредитные консульты придут вам на помощь<br>
-            </p>
-            <img src="img/credit-service.svg" width="465" height="285" alt="Картинка Кредит">
-            <button class="button credit-button">Отправить заявку</button>  
-          </div>        
+          <!--
+          <img src="img/delivery-service.svg" width="468" height="261" alt="Изображение грузовика">  
+          -->
         </div>
-      </div>      
+        <div class="services-slide warranty-slide visually-hidden">
+          <h3 class="services-slider-title">Гарантия</h3>
+          <p class="services-slider-text">Если купленный у нас товар поломается или заискрит, <br>
+            а также в случае пожара, спровоцированного его <br>
+            возгоранием,  вы всегда можете быть уверены в нашей <br>
+            гарантии. Мы обменяем сгоревший товар на новый. <br>
+            Дом уж восстановите как-нибудь сами.
+          </p>
+          <img src="img/warranty-service.svg" width="389" height="283" alt="Картинка Гарантия">
+        </div>
+        <div class="services-slide credit-slide visually-hidden">
+          <h3 class="services-slider-title">Кредит</h3>
+          <p class="services-slider-text">Залезть в долговую яму стало проще!  <br>
+            Кредитные консульты придут вам на помощь<br>
+          </p>
+          <img src="img/credit-service.svg" width="465" height="285" alt="Картинка Кредит">
+          <button class="button credit-button">Отправить заявку</button>  
+        </div>        
+      </div>
     </section>
     <div class="container about-container">
       <section class="about-company">
