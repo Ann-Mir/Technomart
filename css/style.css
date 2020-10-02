@@ -188,6 +188,7 @@ img {
   background-image: url("../img/top-background.png");
   background-repeat: repeat;
   color: var(--basic-white);
+  padding-bottom: 60px;
   margin-bottom: 59px;
   outline: 5px solid rgba(0, 255, 0, 0.7); /* временно */
   outline-offset: -5px;                       /* временно */
@@ -251,6 +252,11 @@ img {
 .order-button:active {
   background-color: var(--click-green);
   opacity: 0.5;
+}
+
+.header-middle .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main-header-about,
@@ -451,10 +457,17 @@ img {
 }
 
 /* Best Sellers */
+.all-best-sellers-button {
+  width: 192px;
+  height: 38px;
+}
 
 .best-sellers-head,
 .top-vendors-header {
+  margin-bottom: 20px;
   background-color: var(--best-sellers-vendors-background);
+  padding-right: 19px;
+  padding-left: 28px;
 }
 
 .best-sellers-title,
@@ -512,6 +525,10 @@ img {
   color: var(--basic-white);
 }
 
+.vendors {
+  margin-bottom: 70px;
+}
+
 .vendors-list {
   display: grid;
   gap: 20px;
@@ -520,6 +537,16 @@ img {
 }
 
 /* services */
+
+.services {
+  margin-bottom: 70px;
+}
+
+.services .container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: ;
+}
 
 .services,
 .perforators-article {
@@ -541,6 +568,7 @@ img {
   color: var(--dark-grey);
 }
 
+.services-text,
 .services-slider-text,
 .company-introduction,
 .contacts-text, 
@@ -591,9 +619,17 @@ img {
 /* footer */
 .page-footer {
   color: var(--basic-white);
+  margin-top: 70px;
   display: grid;
   min-height: 300px;
   grid-template-rows: 1fr 107px;
+}
+
+.footer-top .container {
+  display: grid;
+  grid-template-columns: 321px 1fr;
+  grid-row-gap: 22px;
+  height: 193px;
 }
 
 .footer-top {
@@ -616,10 +652,21 @@ img {
   color: var(--yellow);
 }
 
+.footer-bottom .container{
+  display: grid;
+  grid-template-columns: auto 132px 1fr;
+}
+
 .footer-bottom {
   background-color: var(--darken-grey);
   color: var(--basic-white);
   margin: 0;
+}
+
+.info-extra-links {
+  margin-left: 118px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer-copyright {
