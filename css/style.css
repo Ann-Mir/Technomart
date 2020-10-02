@@ -125,7 +125,7 @@
 }
 
 .page-body {
-  min-width: 960px;
+  min-width: 940px;
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -163,12 +163,32 @@ img {
   clip: rect(0 0 0 0)
 }
 
+.special-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 940px;
+  padding: 0px 10px;
+  margin: 0 auto;
+  outline: 5px solid rgba(0, 255, 0, 0.7); /* временно */
+  outline-offset: -5px; 
+}
 /* Main Header Decoration */
+.main-navigation {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .main-header,
 .catalog-header {
-	background-color: var(--header-background-light-grey);
+ /* background-color: var(--header-background-light-grey);*/
+  background-image: url("../img/top-background.png");
+  background-repeat: repeat;
   color: var(--basic-white);
-  margin-bottom: 50px;
+  margin-bottom: 59px;
   outline: 5px solid rgba(0, 255, 0, 0.7); /* временно */
   outline-offset: -5px;                       /* временно */
 }
@@ -185,19 +205,11 @@ img {
   border: none;
 }
 
-.special-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  min-width: 960px;
-  padding: 0px 10px;
+.header-top {
+  background-color: var(--darken-grey);
 }
 
 .user-navigation {
-	background-color: var(--darken-grey);
 	font-size: 18px;
   line-height: 24px;
 }
@@ -290,7 +302,7 @@ img {
 	color: var(--icon-light-grey);
 }
 
-.main-navigation {
+.header-bottom {
 	background-color: var(--dark-grey);	
 	font-size: 18px;	
 }
@@ -316,7 +328,6 @@ img {
 /* Index Main */
 
 .promo {
-  
   margin-bottom: 59px;
   position: relative;
   /*
@@ -332,8 +343,8 @@ img {
 }
 
 .promo-list-item {
-  min-width: 300px;
-  min-height: 123px;
+  width: 300px;
+  height: 123px;
   box-sizing: content-box;
 }
 
