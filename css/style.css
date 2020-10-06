@@ -196,13 +196,15 @@ img {
 
 .button,
 .full-cart {
+  display: block;
   background-color: var(--basic-red);
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
+  text-align: center;
   border: none;
 }
 
@@ -626,25 +628,43 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   border: 1px solid var(--cards-border);
+  /*
   box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
+  */
+  padding-bottom: 21px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 21px;
+  
 }
 
 .goods-image-container {
   width: 184px;
   height: 164px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+
 }
 
 .best-sellers-article-image {
-  margin-auto;
+  margin: auto;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding-top: 8px;
+  
+}
+
+.best-sellers-original-price {
+  min-height: 18px;
 }
 
 .best-sellers-item-title,
@@ -656,9 +676,15 @@ img {
   margin-left: 18px;
 }
 
-.best-sellers-item-link,
+.product-link,
 .catalog-item-link {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   color: var(--basic-black);
+  text-align: center;
 }
 
 .best-sellers-original-price,
@@ -676,6 +702,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-white);
+  width: 141px;
 }
 
 .vendors {
@@ -709,7 +736,12 @@ img {
 .services-slider {
   display: grid;
   grid-template-columns: 1fr 2fr;
- 
+}
+
+.services-slide {
+  background-image: url("../img/delivery-service.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .services-title,
