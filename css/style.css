@@ -205,9 +205,12 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  /*vertical-align: middle;*/
+  /*
+  vertical-align: middle;
+  */
   text-align: center;
   border: none;
+  box-sizing: border-box;
 }
 
 .header-top {
@@ -596,6 +599,8 @@ img {
 .all-best-sellers-button {
   width: 192px;
   height: 38px;
+  padding: 11px 9px 9px 9px;
+  
 }
 
 .best-sellers-head,
@@ -616,6 +621,12 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.all-vendors-button {
+  width: 192px;
+  height: 38px;
+  padding: 11px 9px 9px 9px;
 }
 
 .best-sellers-list {
