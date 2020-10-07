@@ -454,17 +454,29 @@ img {
 
 .promo {
   margin-bottom: 59px;
-  position: relative;
-  /*
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  */
+  grid-template-areas: 
+    "goods goods goods"
+    "slider slider service"
+    "slider slider service";
+  gap: 20px;
 }
 
 .promo-list {
   display: grid;
+}
+
+.promo-list-goods {
+  grid-area: goods;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  
+}
+
+.promo-list-service {
+  grid-template-rows: repeat(2, fr);
+  gap: 20px;
+  grid-area: service;
 }
 
 .promo-list-item {
@@ -488,13 +500,15 @@ img {
 .promo-slider-container {
   width: 620px;
   height: 266px;
+  /*
   position: absolute;
   bottom: 0px;
   left: 10px;
-  /*
-  grid-column: 1 / 3;
-  grid-row: 2 / 4;
-*/
+  */
+  grid-area: slider;
+  
+  
+
 }
 
 .promo-slide {
