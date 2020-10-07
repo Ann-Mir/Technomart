@@ -316,8 +316,15 @@ img {
 }
 
 .header-middle .container {
+  /*
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 46px;
+  padding-bottom: 46px;
 }
 
 .main-header-about,
@@ -325,7 +332,18 @@ img {
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
-	color: var(--basic-red);
+  color: var(--basic-red);
+  padding-left: 37px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.main-header-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .main-header-phone,
@@ -335,7 +353,11 @@ img {
 	font-weight: bold;
 	line-height: 30px;
 	text-align: center;
-	border: 3px solid var(--basic-white);
+  border: 3px solid var(--basic-white);
+  text-transform: uppercase;
+  text-align: left;
+  vertical-align: middle;
+  padding: 7px 45px 8px 74px;
 }
 
 .main-header-address,
@@ -343,18 +365,17 @@ img {
 	font-size: 14px;
 	line-height: 24px;
 	color: var(--dark-grey);
-	text-align: center;
+  text-align: center;
+  margin: 3px 0px 0px 0px;
+  padding: 0;
+  vertical-align: middle;
 }
 
 .authorization-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: min-content min-content;
-  grid-template-rows: auto;
-  gap: 10px;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 281px; 
 }
 
 .authorization-list-item {
@@ -364,19 +385,33 @@ img {
 	font-size: 21px;
   line-height: 21px;
   height: 45px;
-  background: var(--basic-white);  	
+  background: var(--basic-white);  
+  
+  
+}
+
+.login-button,
+.sign-up-button {
+  height: 45px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
 }
 
 .login-button {
-  display: flex;
-  justify-self: center;
   width: 121px;
   padding: 12px 27px 12px 45px;
 }
 
 .sign-up-button {
   width: 150px;
-  height: 45px; 
   padding: 12px 24px 12px 24px; 
 }
 
@@ -416,12 +451,25 @@ img {
 }
 
 .site-navigation {
+  margin-left: auto;
+  margin-right: auto;
   min-height: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /*
+  padding-left: 200px;
+  padding-right: 200px;
+  */
+}
+
+.site-navigation-item {
+  /*
+  margin-left: 2px;
+  margin-right: 2px;
+  */
 }
 
 .site-navigation-item a {
@@ -429,6 +477,7 @@ img {
   color: var(--basic-white);
   display: block;
   padding: 16px 24px 20px 27px;
+
 }
 
 .site-navigation-item:hover,
