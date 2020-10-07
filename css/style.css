@@ -637,6 +637,7 @@ img {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .goods-image-container {
@@ -656,6 +657,11 @@ img {
   justify-content: flex-start;
   flex-grow: 1;
   padding-top: 8px;
+}
+
+.product-container h3 {
+  margin: 0 17px 0 18px;
+  text-align: center;
 }
 
 .best-sellers-original-price {
