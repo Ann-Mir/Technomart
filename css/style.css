@@ -173,11 +173,8 @@ img {
   width: 940px;
   padding: 0px 10px;
   margin: 0 auto;
-  /*
-  outline: 5px solid rgba(0, 255, 0, 0.7); 
-  outline-offset: -5px;
-  */
 }
+
 /* Main Header Decoration */
 .main-navigation {
   display: grid;
@@ -186,14 +183,11 @@ img {
 
 .main-header,
 .catalog-header {
- /* background-color: var(--header-background-light-grey);*/
   background-image: url("../img/top-background.png");
   background-repeat: repeat;
   color: var(--basic-white);
   padding-bottom: 60px;
   margin-bottom: 59px;
-  outline: 5px solid rgba(0, 255, 0, 0.7); /* временно */
-  outline-offset: -5px;                       /* временно */
 }
 
 .button,
@@ -205,9 +199,6 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  /*
-  vertical-align: middle;
-  */
   text-align: center;
   border: none;
   box-sizing: border-box;
@@ -316,13 +307,9 @@ img {
 }
 
 .header-middle .container {
-  /*
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 46px;
   padding-bottom: 46px;
 }
@@ -368,26 +355,24 @@ img {
   text-align: center;
   margin: 3px 0px 0px 0px;
   padding: 0;
-  vertical-align: middle;
+  justify-content: flex-end;
 }
 
 .authorization-list {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  width: 281px; 
+  align-items: center;
+  width: 281px;
 }
 
 .authorization-list-item {
   display: flex;
   justify-self: center;
-  align-items: center;
+  align-items: flex-start;
 	font-size: 21px;
   line-height: 21px;
   height: 45px;
   background: var(--basic-white);  
-  
-  
 }
 
 .login-button,
@@ -401,7 +386,6 @@ img {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
-  vertical-align: middle;
   border: none;
 }
 
@@ -459,17 +443,6 @@ img {
   justify-content: center;
   align-items: center;
   align-content: center;
-  /*
-  padding-left: 200px;
-  padding-right: 200px;
-  */
-}
-
-.site-navigation-item {
-  /*
-  margin-left: 2px;
-  margin-right: 2px;
-  */
 }
 
 .site-navigation-item a {
@@ -477,7 +450,6 @@ img {
   color: var(--basic-white);
   display: block;
   padding: 16px 24px 20px 27px;
-
 }
 
 .site-navigation-item:hover,
@@ -493,9 +465,7 @@ img {
 	opacity: 0.5;
 }
 
-
 /* Index Main */
-
 .promo {
   margin-bottom: 59px;
   display: grid;
@@ -649,7 +619,6 @@ img {
   width: 192px;
   height: 38px;
   padding: 11px 9px 9px 9px;
-  
 }
 
 .best-sellers-head,
@@ -682,7 +651,6 @@ img {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  
 }
 
 .best-sellers-article,
@@ -774,11 +742,9 @@ img {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-
 }
 
 /* services */
-
 .services {
   padding-top: 64px;
   margin-bottom: 70px;
@@ -864,9 +830,6 @@ img {
 
 .about-container {
   display: grid;
-  /*
-  grid-template-columns: repeat(6, 1fr);
-  */
   grid-template-columns: auto min-content;
 }
 
@@ -874,25 +837,18 @@ img {
   width: 220px;
   height: 38px;
   margin-top: 20px;
-}
-
-.about-company {
-  /*
-  grid-column: 1 / span 3; 
-  */
+  padding: 11px 9px 9px 9px;
 }
 
 .contacts {
   min-width: 300px;
-  /*
-  grid-column: -3 / span 2;
-  */
 }
 
 .email-us-button {
   margin-top: 25px;
   min-width: 100%;
   height: 38px;
+  padding: 11px 9px 9px 9px;
 }
 
 /* footer */
