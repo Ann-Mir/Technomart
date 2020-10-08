@@ -964,6 +964,31 @@ img {
 .about-container {
   display: grid;
   grid-template-columns: auto min-content;
+  min-height: 356px;
+  margin-bottom: 70px;
+}
+
+.partners-list-item {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 37px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.partners-list-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 12px;
+  left: 0;
+  background-color: var(--basic-red);
+}
+
+.partners-list-item:last-child {
+  margin-bottom: 20px;
 }
 
 .about-company-button {
