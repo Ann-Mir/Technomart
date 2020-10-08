@@ -524,6 +524,11 @@ img {
   min-height: 123px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  box-sizing: border-box;
 }
 
 .promo-sale {
@@ -561,7 +566,6 @@ img {
   color: var(--basic-white);
   vertical-align: middle;
   padding: 10px 0 10px 0;
-  margin-left: 23px;
 }
 
 .promo-list-button:hover, .promo-list-button:focus {
@@ -573,19 +577,27 @@ img {
 }
 
 .promo-list-item-title {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: var(--basic-white);
-  text-align: left;
-  vertical-align: middle;
-  padding-left: 23px;
 }
 
-.promo-goods {
+.promo-list-item {
+  position: relative;
+}
+
+.promo-goods::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: 43px;
+  width: 44px;
+  height: 65px;
   background-image: url("../img/materials.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 0 0;
 }
 
 .promo-goods, .promo-delivery {
