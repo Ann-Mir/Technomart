@@ -705,14 +705,23 @@ img {
   padding: 11px 9px 9px 9px;
 }
 
+.best-sellers-head {
+  padding-right: 14px;
+}
+
 .best-sellers-head, .top-vendors-header {
   margin-bottom: 20px;
+  min-height: 89px;
   background-color: var(--best-sellers-vendors-background);
-  padding-right: 19px;
   padding-left: 28px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.top-vendors-header {
+  padding-right: 19px;
 }
 
 .best-sellers-title, .top-vendors-title, .catalog-section-title {
@@ -803,11 +812,30 @@ img {
 }
 
 .best-sellers-price-button, .catalog-price-button {
+  width: 121px;
+  display: block;
+  position: relative;
+  padding: 10px 20px 10px 32px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: var(--basic-white);
   background-color: var(--basic-red);
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-  color: var(--basic-white);
-  width: 141px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.best-sellers-price-button::after,
+.catalog-price-button::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  border: 19px solid transparent;
+  border-left: 19px solid var(--basic-red);
 }
 
 .vendors {
