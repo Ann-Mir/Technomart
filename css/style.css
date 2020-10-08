@@ -79,6 +79,9 @@
   --click-green: #518534;
   --darken-grey: #293449;
   --dark-grey: #32425C;
+  --hover-grey: #3d546f;
+  --basic-logo-inset: rgba(0, 0, 0, 0.24);
+
   /* header specific */
   --header-background-light-grey: #F3F7F9;
   --phone-icon-grey: #B7BFC8;
@@ -208,12 +211,16 @@ img {
 
 .header-top {
   background-color: var(--darken-grey);
+  min-height: 42px;
 }
 
 .header-top .container {
+  position: relative;
+  /*
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  */
 }
 
 .user-navigation {
@@ -236,15 +243,22 @@ img {
   height: 100%;
 }
 
-.logo {
+.logo-image {
+  padding: 12px 57px 17px 55px;
   background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--basic-logo-inset);
+
 }
 
-.logo:active {
+.logo-image:active {
   background-color: var(--active-red);
 }
 
 .main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
   width: 220px;
   height: 47px;
 }
@@ -269,6 +283,8 @@ img {
   height: 16px;
   margin-right: 9px;
   background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.5;
 }
 
@@ -283,6 +299,8 @@ img {
   height: 15px;
   margin-right: 8px;
   background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.5;
 }
 
@@ -332,14 +350,28 @@ img {
 .main-header-phone, .catalog-header-phone {
   color: var(--basic-red);
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
   border: 3px solid var(--basic-white);
   text-transform: uppercase;
   text-align: left;
   vertical-align: middle;
-  padding: 7px 45px 8px 74px;
+  padding: 4px 42px 5px 71px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main-header-phone::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 39px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 19px;
+  height: 19px;
 }
 
 .main-header-address, .catalog-header-address {
@@ -371,47 +403,54 @@ img {
 
 .login-button, .sign-up-button {
   height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--basic-white);
   color: var(--basic-black);
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
   border: none;
 }
 
 .login-button {
+  display: block;
+  position: relative;
   width: 121px;
   padding: 12px 27px 12px 45px;
+  box-sizing: border-box;
+}
+
+.login-icon {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  width: 20px;
+  height: 17px;
 }
 
 .sign-up-button {
   width: 150px;
   padding: 12px 24px 12px 24px;
+  display: block;
 }
 
-.login-button::before {
-  content: "";
-  width: 20px;
-  height: 17px;
-  margin-right: 6px;
-  background-image: url("../img/icon-login.svg");
+.login-button:hover path,
+.login-button:focus path {
+  fill: var(--hover-grey);
 }
 
-.login-button, .sign-up-button {
-  display: inline-block;
-  padding: 12px 24px 27px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+.login-button:active path {
+  fill: var(--icon-light-grey);
 }
 
-.authorization-list-item:hover a, .authorization-list-item:focus a {
+.login-button:hover,
+.login-button:focus,
+.sign-up-button:hover,
+.sign-up-button:focus {
   color: var(--basic-red);
 }
 
-.authorization-list-item:active a {
+.login-button:active,
+.sign-up-button:active {
   color: var(--icon-light-grey);
 }
 
