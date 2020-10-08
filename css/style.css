@@ -851,17 +851,19 @@ img {
 /* services */
 
 .services {
-  padding-top: 64px;
+  min-height: 518px;
   margin-bottom: 70px;
 }
 
 .services-top {
-  padding-bottom: 67px;
+  padding-bottom: 21px;
 }
 
 .services {
-  display: grid;
-  grid-template-rows: auto 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 4px;
 }
 
 .services, .perforators-article {
@@ -869,14 +871,16 @@ img {
 }
 
 .services-slider {
+  min-height: 280px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.services-slide {
+.delivery-slide {
   background-image: url("../img/delivery-service.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
+  
 }
 
 .services-title, .services-slider-title, .about-company-title, .contacts-title, .perforators-article-title {
@@ -886,6 +890,9 @@ img {
   font-weight: normal;
 }
 
+.services-title {
+  margin-top: 57px;
+}
 .services-slider-title {
   color: var(--dark-grey);
   margin-top: 0;
