@@ -103,6 +103,7 @@
   /*best-sellers & vendors sections */
   --best-sellers-vendors-background: #F9F5F0;
   --cards-border: #EAEAEA;
+  --vendor-box-shadow:  rgba(0, 0, 0, 0.15);
   /* services section */
   --basic-background-grey: #F1F5F7;
   /*пара слов о перфораторах */
@@ -847,6 +848,16 @@ img {
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
 }
+
+.vendors-list-item:hover, .vendors-list-item:focus {
+  box-shadow: 0px 4px 20px 0px var(--vendor-box-shadow);
+}
+
+.vendors-list-item:active {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  opacity: 0.5;
+}
+
 
 /* services */
 
