@@ -1088,7 +1088,8 @@ img {
   margin-left: 23px;
 }
 
-.footer-site-navigation-item-link, .footer-catalog-navigation-item {
+.footer-site-navigation-item-link, 
+.footer-catalog-navigation-item {
   display: block;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
@@ -1096,11 +1097,13 @@ img {
   line-height: 24px;
 }
 
-.footer-site-navigation-item, .footer-catalog-navigation-item  {
+.footer-site-navigation-item, 
+.footer-catalog-navigation-item  {
   margin-left: 60px;
 }
 
-.footer-site-navigation-item:first-child, .footer-catalog-navigation-item:first-child  {
+.footer-site-navigation-item:first-child, 
+.footer-catalog-navigation-item:first-child  {
   margin-left: 0;
 }
 
@@ -1110,7 +1113,7 @@ img {
 }
 
 .footer-nav-container {
-  flex-grow: 2;
+  /*flex-grow: 2;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1124,12 +1127,6 @@ img {
   color: var(--yellow);
 }
 
-.footer-bottom .container {
-  display: grid;
-  grid-template-columns: auto 132px 1fr;
-  height: 100%;
-}
-
 .footer-bottom {
   background-color: var(--darken-grey);
   color: var(--basic-white);
@@ -1137,37 +1134,63 @@ img {
 }
 
 .footer-bottom .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.info-extra-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 100%;
+  display: grid;
+  grid-template-columns: 376px auto min-content min-content;
+  height: 100%;
+  padding: 35px 0 35px 0;
+  box-sizing: border-box;
 }
 
 .footer-copyright {
   font-size: 16px;
   line-height: 18px;
+  grid-column: 1/1;
+  margin: 0;
+}
+
+.footer-social {
+  grid-column: 2/2;
+  align-self: start;
+}
+
+.social-list {
+  min-width: 138px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-right: 4px;
+  border-radius: 50%;
   color: inherit;
   background-color: var(--social-grey);
+  padding: 1px;
+  box-sizing: border-box;
 }
 
 .social-button:hover, .social-button:focus, .social-button:active {
   background-color: var(--basic-red);
 }
 
+.footer-feedback {
+  padding-right: 39px;
+}
+
+.footer-made-by {
+  margin: 0;
+  padding-right: 15px;
+}
+
 .footer-feedback, .footer-made-by {
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
-  margin: auto 13px auto 38px;
 }
 
 .footer-feedback a, .footer-made-by a {
