@@ -217,17 +217,17 @@ img {
 
 .header-top .container {
   position: relative;
-  /*
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  */
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .user-navigation {
   font-size: 18px;
   line-height: 24px;
   width: 450px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -237,11 +237,12 @@ img {
 
 .user-navigation a {
   color: var(--basic-white);
+  /*
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  */
 }
 
 .logo-image {
@@ -265,8 +266,35 @@ img {
 }
 
 .search {
-  max-width: 271px;
+  min-height: 100%;
+  width: 271px;
   margin-right: auto;
+}
+
+.favorites, .cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 42px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: inherit;
+}
+
+.favorites {
+  padding-left: 43px;
+}
+
+.cart {
+  padding-left: 49px;
+}
+
+.favorites:hover::before,
+.cart:hover::before,
+.favorites:focus::before,
+.cart:focus::before {
+  opacity: 1;
 }
 
 .favorites:active, .cart:active {
@@ -274,31 +302,26 @@ img {
   opacity: 0.5;
 }
 
-.favorites, .cart {
-  padding-left: 23px;
-}
-
 .favorites::before {
   content: "";
   width: 14px;
   height: 16px;
-  margin-right: 9px;
+  position: absolute;
+  top: 13px;
+  left: 20px;
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.5;
 }
 
-.cart {
-  display: flex;
-  align-items: center;
-}
-
 .cart::before {
   content: "";
   width: 15px;
   height: 15px;
-  margin-right: 8px;
+  position: absolute;
+  top: 13px;
+  left: 26px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -306,11 +329,16 @@ img {
 }
 
 .order-button {
-  background-color: var(--basic-green);
-  width: 150px;
-  margin: 0;
+  box-sizing: border-box;
+	display: inline-block;
+	background-color: var(--basic-green);
+	color: var(--basic-white);
+	min-width: 150px;
+	min-height: 42px;
+  padding-top: 9px;
   font-size: 18px;
   line-height: 24px;
+	text-align: center;
 }
 
 .order-button:hover, .order-button:focus, .purchase-button:hover, .purchase-button:focus {
