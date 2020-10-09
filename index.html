@@ -17,10 +17,13 @@
             <img class="header-logo-image logo-image" src="img/logo-technomart.svg" width="107" height="17"
               alt="Логотип интернет-магазина Техномарт">
           </a>
-          <input class="search" type="text" placeholder="Поиск">
+          <form action="https://echo.htmlacademy.ru" method="GET" class="search-form">
+            <label for="search" class="search-label"><span class="visually-hidden">Поиск</span></label>
+            <input class="search" type="search" name="search" id="search" placeholder="Поиск:">
+          </form>
           <div class="user-navigation">
-            <a class="button favorites" href="#">Закладки: <span class="quantity">0</span></a>
-            <a class="button cart" href="#">Корзина: <span class="quantity">0</span></a>
+            <a class="button favorites" href="#">Закладки: 0</a>
+            <a class="button cart" href="#">Корзина: 0</a>
             <a class="button order-button" href="#">Оформить заказ</a>
           </div>
         </div>

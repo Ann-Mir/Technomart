@@ -265,10 +265,59 @@ img {
   height: 47px;
 }
 
-.search {
+.search-form {
   min-height: 100%;
-  width: 271px;
+  width: 270px;
   margin-right: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.search-label {
+  display: flex;
+  opacity: 0.3;
+}
+
+.search-label::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-right: 7px;
+}
+
+.search-form:hover .search-label::before {
+  opacity: 1;
+}
+
+.search {
+  background-color: transparent;
+  color: var(--basic-white);
+  border: none;
+}
+
+.search::placeholder {
+  color: var(--basic-white);
+  opacity: 1;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--basic-white);
+  width: 100%;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.search:focus::placeholder {
+  color: var(--basic-black);
 }
 
 .favorites, .cart {
