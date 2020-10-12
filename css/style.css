@@ -237,19 +237,12 @@ img {
 
 .user-navigation a {
   color: var(--basic-white);
-  /*
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  */
 }
 
 .logo-image {
   padding: 12px 57px 17px 55px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--basic-logo-inset);
-
 }
 
 .logo-image:active {
