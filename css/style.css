@@ -587,6 +587,28 @@ img {
   display: grid;
 }
 
+.new-item::after {
+  content: "new";
+  font: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  text-align: center;
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  top: 5px;
+  right: -25px;
+  padding-top: 8px;
+  padding-left: 3px;
+  background-color: var(--basic-red);
+  transform: rotate(45deg);
+}
+
+
 .promo-list-goods {
   grid-area: goods;
   grid-template-columns: repeat(3, 1fr);
@@ -666,6 +688,8 @@ img {
 
 .promo-list-item {
   position: relative;
+  overflow: hidden;
+  color: var(--basic-white);
 }
 
 .promo-goods::before {
@@ -826,8 +850,6 @@ img {
 .best-sellers-article, .catalog-article {
   width: 220px;
   min-height: 318px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: bold;
   border: 1px solid var(--cards-border);
   padding-bottom: 21px;
   display: flex;
@@ -835,6 +857,8 @@ img {
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .goods-image-container {
@@ -848,6 +872,8 @@ img {
 }
 
 .product-container {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
