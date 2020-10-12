@@ -861,6 +861,17 @@ img {
   overflow: hidden;
 }
 
+.best-sellers-article:hover,
+.best-sellers-article:focus,
+.best-sellers-article:hover,
+.best-sellers-article:focus {
+  box-shadow: 0px 4px 20px var(--vendor-box-shadow);
+}
+
+.best-sellers-article:hover .goods-image-container {
+  opacity: 0;
+}
+
 .goods-image-container {
   width: 184px;
   height: 164px;
@@ -944,6 +955,88 @@ img {
   border-left: 19px solid var(--basic-red);
 }
 
+.best-sellers-price-button::before {
+  content: "";
+  position: absolute;
+  border: 19px solid transparent;
+  border-left: 19px solid var(--basic-red);
+  left: 100%;
+  top: 0px;
+}
+
+.best-sellers-price-button:hover::before,
+.best-sellers-price-button:focus::before {
+  border: 19px solid transparent;
+  border-left: 19px solid var(--hover-red);
+}
+
+.best-sellers-price-button:active::before {
+  border: 19px solid transparent;
+  border-left: 19px solid var(--active-red);
+}
+
+.popular-item-hover {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 41px;
+}
+
+.popular-item-hover button {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.best-sellers-article:hover .popular-item-hover,
+.best-sellers-article:hover .popular-item-hover {
+  display: block;
+}
+
+.buy {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0px -3px 0px var(--green-button-shadow);
+  display: block;
+  box-sizing: border-box;
+  width: 135px;
+  height: 38px;
+  margin-bottom: 10px;
+}
+
+.buy:hover,
+.buy:focus {
+  background-color: var(--hover-green);
+}
+
+.buy:active {
+  background-color: var(--click-green);
+}
+
+.bookmarks {
+  color: var(--dark-grey);
+  background-color: var(--basic-white);
+  border-radius: 2px;
+  border: 3px solid var(--basic-green);
+  display: block;
+  box-sizing: border-box;
+  width: 135px;
+  height: 38px;
+}
+
+.bookmarks:hover,
+.bookmarks:focus {
+  border-color: var(--dark-grey);
+}
+
+.bookmarks:active {
+  opacity: 0.5;
+}
+
 .vendors {
   margin-bottom: 70px;
 }
@@ -959,7 +1052,7 @@ img {
 }
 
 .vendors-list-item:active {
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px 0px var(--vendor-box-shadow);
   opacity: 0.5;
 }
 
