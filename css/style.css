@@ -266,7 +266,9 @@ img {
 }
 
 .search-form {
+  position: relative;
   min-height: 100%;
+  height: 100%;
   width: 270px;
   margin-right: auto;
   display: flex;
@@ -276,23 +278,21 @@ img {
   padding: 0;
 }
 
-.search-label {
-  display: flex;
-  opacity: 0.3;
-}
-
-.search-label::before {
-  content: "";
+.searching-icon {
+  position: absolute;
   width: 17px;
   height: 17px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  align-self: center;
-  margin-right: 7px;
+  top: 12px;
+  left: 17px;
+  fill: var(--basic-white);
 }
 
-.search-form:hover .search-label::before {
-  opacity: 1;
+.search {
+  position: absolute;
+  top: 9px;
+  left: 42px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .search {
@@ -309,7 +309,9 @@ img {
 .search:focus {
   outline: none;
   background-color: var(--basic-white);
-  width: 100%;
+  width: 80%;
+  padding-top: 0;
+  padding-bottom: 0;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
