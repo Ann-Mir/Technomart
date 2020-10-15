@@ -975,9 +975,10 @@ img {
   min-height: 318px;
   border: 1px solid var(--cards-border);
   padding-bottom: 21px;
+  padding-top: 6px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   position: relative;
@@ -999,6 +1000,8 @@ img {
   width: 184px;
   height: 164px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .best-sellers-article-image {
@@ -1019,10 +1022,16 @@ img {
 .product-container h3 {
   margin: 0 17px 0 18px;
   text-align: center;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .best-sellers-original-price {
   min-height: 18px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 7px auto 14px auto;
 }
 
 .best-sellers-item-title, .catalog-item-title {
@@ -1066,6 +1075,7 @@ img {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin-left: -5px;
 }
 
 .best-sellers-price-button::after,
