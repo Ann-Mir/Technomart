@@ -1178,6 +1178,7 @@ img {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 145px);
 }
 
 .vendors-list-item:hover, .vendors-list-item:focus {
