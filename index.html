@@ -102,7 +102,7 @@
       <ul class="special-list promo-list promo-list-service">
         <li class="promo-list-item promo-sale">
           <h3 class="promo-list-item-title">Скидки 50%</h3>
-          <a class="button promo-list-button" href="#">На все случаи</a>
+          <a class="button promo-list-button" href="#">На 350 товаров</a>
         </li>
         <li class="promo-list-item promo-delivery">
           <h3 class="promo-list-item-title">Доставка</h3>
@@ -110,20 +110,25 @@
         </li>
       </ul>
       <div class="promo-slider-container">
-        <div class="promo-slide promo-slide-active">
-          <img class="slide-image" src="img/perforators-slider.jpg" width="620" height="266" alt="Каталог перфораторов">
-          <h3 class="slide-title visually-hidden">Перфораторы</h3>
-          <p class="slide-text visually-hidden">Настоящие мужские игрушки</p>
+        <ul class="promo-slider-list">
+          <li class="promo-slider-item promo-slide-1 slide-active">
+            <h3 class="promo-slide-title">Перфораторы</h3> 
+            <p class="promo-slide-text">Настоящие мужские игрушки</p>
+          </li>
+          <li class="promo-slider-item promo-slide-2">
+            <h3 class="promo-slide-title">Дрели</h3>
+            <p class="promo-slide-text">Соседям на радость!</p>
+          </li>
+        </ul>
+        <div class="promo-slider-navigation">
+          <button class="promo-slider-previous" type="button" aria-label="Назад" disabled></button>
+          <button class="promo-slider-next" type="button" aria-label="Вперёд"></button>
         </div>
-        <!--       
-        <div class="promo-slide">
-          <img class="slide-image" src="img/drills-slider.jpg" width="620" height="266" alt="Каталог дрелей">
-          <h3 class="slide-title">Дрели</h3>
-          <p class="slide-text">Соседям на радость</p>
+        <a class="button catalog-link" href="catalog.html">Открыть каталог</a>
+        <div class="promo-slider-controls">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
         </div>
-        <a class="button catalog-button" href="catalog.html">Открыть каталог</a>
-        <button class="slider-button slider-prev-button" type="button">Назад</button>
-        <button class="slider-button slider-next-button" type="button">Вперед</button> -->
       </div>
     </section>
     <section class="best-sellers container">
@@ -277,11 +282,7 @@
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
             </p>
-         <!--   <img class="services-image" src="img/delivery-service.svg" width="468" height="261" alt="Изображение грузовика">  -->
           </div>
-          
-          
-          
         </div>
         <div class="services-slide warranty-slide visually-hidden">
           <h3 class="services-slider-title">Гарантия</h3>

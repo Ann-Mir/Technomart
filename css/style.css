@@ -265,8 +265,6 @@ img {
   min-height: 100%;
   height: 100%;
   width: 271px;
-  /*
-  margin-right: auto;*/
   display: flex;
   justify-content: left;
   align-items: center;
@@ -288,8 +286,6 @@ img {
   top: 11px;
   left: 43px;
   padding: 0; 
- /* padding-top: 0;
-  padding-bottom: 0;*/
   background-color: transparent;
   color: var(--basic-white);
   border: none;
@@ -383,7 +379,7 @@ img {
 	color: var(--basic-white);
 	min-width: 150px;
 	min-height: 42px;
-  padding-top: 9px;
+  padding: 9px 16px 9px 19px;
   font-size: 18px;
   line-height: 24px;
 	text-align: center;
@@ -539,10 +535,6 @@ img {
 .header-bottom {
   width: 940px;
   box-sizing: border-box;
-  display: flex;
-  align-content: stretch;
-  align-items: center;
-  justify-content: space-between;
   background-color: var(--dark-grey);
   font-size: 18px;
   min-height: 60px;
@@ -552,6 +544,7 @@ img {
 }
 
 .site-navigation {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -566,7 +559,6 @@ img {
 .site-navigation-item a {
   color: var(--basic-white);
   display: block;
-  /*padding: 16px 24px 20px 27px;*/
 }
 
 .site-navigation-item:first-child {
@@ -619,7 +611,6 @@ img {
   transform: rotate(45deg);
 }
 
-
 .promo-list-goods {
   grid-area: goods;
   grid-template-columns: repeat(3, 1fr);
@@ -640,29 +631,145 @@ img {
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 21px;
-  padding-left: 23px;
+  padding-left: 22px;
   box-sizing: border-box;
+}
+
+.promo-list-item:first-child {
+  padding-left: 23px;
 }
 
 .promo-sale {
   grid-column-start: -2;
   grid-column-end: -1;
+  padding-bottom: 23px;
 }
 
 .promo-delivery {
   grid-column-start: -2;
   grid-column-end: -1;
+  padding-bottom: 22px;
 }
 
 .promo-slider-container {
+  position: relative;
   width: 620px;
   height: 266px;
   grid-area: slider;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: var(--dark-grey);
 }
 
-.promo-slide {
+.promo-slider-list {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;  
+}
+
+.promo-slider-item {
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: var(--basic-white);
+}
+
+.slide-active {
+  display: block;
+}
+
+.promo-slide-1 {
+  background-image: url("../img/perforators-slider.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo-slide-2 {
+  background-image: url("../img/drills-slider.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo-slide-title {
+  margin: 0;
+  padding-top: 23px;
+  padding-left: 24px;
+  padding-bottom: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promo-slide-text {
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-slider-controls {
+  position: absolute;
+  left: 293px;
+  bottom: 32px;
+  z-index: 2;
+}
+
+.catalog-link {
+  position: absolute;
+  bottom: 27px;
+  left: 24px;
+  min-width: 192px;
+  padding: 11px 46px 9px 46px;
+}
+
+.promo-slider-controls button {
+  margin: 3px;
+  padding: 0;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+}
+
+.promo-slider-controls .current {
+  background-color: var(--basic-red);
+}
+
+.promo-slider-next {
+  position: absolute;
+  top: 130px;
+  right: 1px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  background-color: transparent;
+  border-top: 3px solid var(--basic-white);
+  border-right: 3px solid var(--basic-white);
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
+.promo-slider-previous {
+  position: absolute;
+  top: 130px;
+  left: 5%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  transform: rotate(-135deg);
+  background-color: transparent;
+  border-top: 3px solid var(--basic-white);
+  border-right: 3px solid var(--basic-white);
+  border-bottom: none;
+  border-left: none;
 }
 
 .promo-list-item a {
@@ -670,15 +777,25 @@ img {
 }
 
 .promo-list-button {
+  width: 135px;
+  padding: 10px 0 10px 0;
   background-color: var(--transparent-white);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  width: 135px;
   color: var(--basic-white);
   vertical-align: middle;
-  padding: 10px 0 10px 0;
+}
+
+.promo-sale .promo-list-button {
+  padding-left: 22px;
+  padding-right: 23px;
+}
+
+.promo-delivery .promo-list-button {
+  padding-left: 36px;
+  padding-right: 37px;
 }
 
 .promo-list-button:hover, .promo-list-button:focus {
@@ -793,18 +910,11 @@ img {
   background-color: var(--dark-grey);
 }
 
-.slide-title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.catalog-button:hover, .catalog-button:focus {
+.catalog-link:hover, .catalog-link:focus {
   background-color: var(--hover-red);
 }
 
-.catalog-button:active {
+.catalog-link:active {
   background-color: var(--active-red);
 }
 
