@@ -1238,7 +1238,6 @@ img {
 }
 .services-slider-title {
   color: var(--dark-grey);
-  /*margin-top: 0;*/
   margin-top: 35px;
 }
 
@@ -1246,6 +1245,10 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+.contacts-text {
+  line-height: 25px;
 }
 
 .services-slider-text {
@@ -1316,14 +1319,27 @@ img {
   margin-bottom: 70px;
 }
 
+.about-company {
+  padding-top: 1px;
+}
+
 .about-company-title,
 .contacts-title {
   margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.about-company-title {
+  margin-bottom: 22px;
+}
+
+.company-introduction {
+  width: 460px;
 }
 
 .company-introduction:last-of-type {
-  margin-top: 32px;
-  margin-bottom: 5px;
+  margin-top: 28px;
+  margin-bottom: 3px;
 }
 
 
@@ -1359,11 +1375,12 @@ img {
 
 .contacts {
   min-width: 300px;
+  padding-top: 1px;
 }
 
 .map {
-  margin-top: 21px;
-  margin-bottom: 25px;
+  margin-top: 18px;
+  margin-bottom: 20px;
 }
 
 .email-us-button {
