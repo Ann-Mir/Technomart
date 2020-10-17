@@ -1707,7 +1707,7 @@ img {
 }
 
 .modal-feedback {
-  display: none;
+  /*display: none;*/
   width: 620px;
   height: 430px;
   box-sizing: border-box;
@@ -1741,7 +1741,7 @@ img {
 .close-button:hover,
 .close-button:focus,
 .close-button:visited {
-  background-color: var(--catalog-breadcrumbs);
+  filter: drop-shadow(0px 5px 5px var(--modal-shadow));
 }
 
 .modal-feedback p {
