@@ -330,7 +330,6 @@
   <footer class="page-footer main-footer">
     <div class="footer-top">
       <div class="container">
-       <!-- <div class="footer-top-logo-container">-->
           <a class="logo main-footer-logo">
             <img class="footer-logo-image" src="img/logo-technomart.svg" width="138" height="23"
               alt="Логотип интернет-магазина Техномарт">
@@ -357,8 +356,6 @@
             <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </section>
-       <!-- </div>-->
-        <!--<div class="footer-nav-container"> -->
           <ul class="special-list footer-catalog-navigation">
             <li class="footer-catalog-navigation-item">
               <a class="footer-catalog-navigation-item-link" href="#">Материалы</a>
@@ -373,7 +370,6 @@
               <a class="footer-catalog-navigation-item-link" href="#">Спецпредложения</a>
             </li>
           </ul>
-       <!-- </div>-->
       </div>
     </div>
     <div class="footer-bottom">
@@ -421,6 +417,45 @@
      </div>
     </div>
   </footer>
+
+  <section class="modal modal-feedback"> 
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form action="#" method="post" class="feedback-form">
+      <div class="modal-container modal-top-container">
+        <p>
+          <label for="user_name">Ваше имя:</label>
+          <input type="text" name="user-name" class="modal-input modal-username" id="user_name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="e-mail" class="modal-input user-email" id="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <div class="modal-container">
+        <p>
+          <label for="user_message">Текст письма:</label>
+          <textarea rows="5" name="message" id="user_message" class="modal-input user-message" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <div class="modal-submit-container">
+        <div class="modal-container">
+          <button type="submit" class="button modal-submit-button">Отправить</button>
+        </div>
+      </div>
+    </form>
+    <button class="close-button" aria-label="Закрыть форму обратной связи">
+      <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть форму обратной связи">
+    </button> 
+  </section>
+
+  <section class="modal modal-popup-map">
+    <h2 class="visually-hidden">Всплывающая интерактивная карта</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3006453634514!2d30.322412746456138!3d59.9387579050603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602006126105!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button class="close-button" aria-label="Закрыть интерактивную карту">
+      <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть ">
+    </button>
+  </section>
+
 </body>
 
 </html>
