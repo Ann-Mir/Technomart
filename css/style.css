@@ -281,6 +281,15 @@ img {
   padding: 0;
 }
 
+.search-form:focus-within {
+  background-color: var(--basic-white);
+}
+
+.search-form:focus-within .searching-icon {
+  fill: var(--basic-red);
+  opacity: 1;
+}
+
 .searching-icon {
   position: absolute;
   width: 17px;
