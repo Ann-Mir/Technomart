@@ -19,7 +19,7 @@
           </a>
           <form action="https://echo.htmlacademy.ru" method="GET" class="search-form">
             <label for="search" class="search-label"><span class="visually-hidden">Поиск</span></label>
-            <svg class="searching-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="searching-icon" aria-hidden="true" focusable="false" width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
               </g>
@@ -44,7 +44,7 @@
           <ul class="special-list authorization-list">
             <li class="button authorization-list-item">
               <a class="button login-button" href="#">Войти
-                <svg class="login-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="login-icon" aria-hidden="true" focusable="false" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
                   <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
                 </svg>
@@ -322,7 +322,7 @@
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-text">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <img class="map" src="img/map.png" width="300" height="158" alt="Адрес офиса: Большая Конюшнная ул., 19">
+        <img class="map" src="img/map.png" width="300" height="158" alt="Адрес офиса: Большая Конюшенная ул., 19, Санкт-Петербург">
         <a class="button email-us-button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -381,8 +381,8 @@
           <h2 class="visually-hidden">Давайте дружить!</h2>
           <ul class="special-list social-list">
             <li class="social-list-item">
-              <a class="social-button social-button-vk" href="#" title="Мы в Вконтакте"><span class="visually-hidden">ВКонтакте</span>
-                <svg width="27" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social-button social-button-vk" href="#">
+                <svg role="img" aria-label="Логотип Вконтакте" width="27" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.14 12.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.72.74-5.25 1.6-2.15 2.24-3.47 2.04-4.03-.2-.53-1.37-.4-1.37-.4l-3.91.03c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.14-2.72 2.96-.66-.44-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 1c-1.39-.02-2.57 0-3.24.33-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.93-1.4-2.93s-.1-.28-.32-.44c-.25-.18-.6-.24-.6-.24l-3.71.02s-.56.02-.76.27c-.19.21-.02.66-.02.66s2.9 6.88 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z"
                     fill="#fff"/>
@@ -390,16 +390,15 @@
               </a>
             </li>
             <li class="social-list-item">
-              <a class="social-button social-button-fb" href="#" title="Мы в Facebook"><span class="visually-hidden">Facebook</span>
-                <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social-button social-button-fb" href="#">
+                <svg aria-label="Логотип Фейсбук" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/>
                 </svg>
               </a>
             </li>
             <li class="social-list-item">
-              <a class="social-button social-button-inst" href="#" title="Мы в Инстраграмм"><span
-                class="visually-hidden">Instagram</span>
-                <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social-button social-button-inst" href="#">
+                <svg aria-label="Логотип Инстаграм" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
                         fill="#fff"/>
@@ -443,17 +442,13 @@
         </div>
       </div>
     </form>
-    <button class="close-button" aria-label="Закрыть форму обратной связи">
-      <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть форму обратной связи">
-    </button> 
+    <button class="close-button" aria-label="Закрыть форму обратной связи"></button> 
   </section>
 
   <section class="modal modal-popup-map">
     <h2 class="visually-hidden">Всплывающая интерактивная карта</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3006453634514!2d30.322412746456138!3d59.9387579050603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602006126105!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <button class="close-button" aria-label="Закрыть интерактивную карту">
-      <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть ">
-    </button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3006453634514!2d30.322412746456138!3d59.9387579050603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602006126105!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Адрес офиса: Большая Конюшенная ул., 19, Санкт-Петербург"></iframe>
+    <button class="close-button" aria-label="Закрыть интерактивную карту"></button>
   </section>
 
 </body>

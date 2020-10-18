@@ -550,15 +550,19 @@ img {
 
 .site-navigation {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  box-sizing: border-box;
 }
 
 .site-navigation-item {
   margin-left: 56px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .site-navigation-item a {
@@ -1699,6 +1703,7 @@ img {
 /* Modal Index */
 
 .modal {
+  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -1707,7 +1712,6 @@ img {
 }
 
 .modal-feedback {
-  /*display: none;*/
   width: 620px;
   height: 430px;
   box-sizing: border-box;
@@ -1722,13 +1726,35 @@ img {
   padding: 0;
 }
 
-.modal-feedback .close-button {
-  position: absolute;
-  background-color: transparent;
-  top: 14px;
-  right: 6px;
-  border: none;
+.close-button {
   cursor: pointer;
+  position: absolute;
+  right: 11px;
+  top: 21px;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  border: 0;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: var(--basic-red);
+  right: 1px;
+  top: 10px;
+}
+
+.close-button::before {
+  transform: rotate(-45deg);
+}
+
+.close-button::after {
+  transform: rotate(45deg);
 }
 
 .modal-submit-button,
@@ -1765,12 +1791,11 @@ img {
 }
 
 .feedback-form label {
+  display: block;
   font-size: 18px;
   line-height: 24px;
-  font-family: Cuprum, Arial ,sans-serif;
+  font-family: "Cuprum", Arial ,sans-serif;
   color: var(--basic-black);
-
-  display: block;
   margin-bottom: 11px;
 }
 
@@ -1803,17 +1828,17 @@ img {
 }
 
 .modal-submit-button {
+  display: block;
+  width: 100%;
+  padding: 9px 0 11px;
   font-size: 14px;
   line-height: 18px;
-  font-family: Cuprum, Arial ,sans-serif;
+  font-family: "Cuprum", Arial ,sans-serif;
   text-transform: uppercase;
   color: var(--basic-white);
   text-align: center;
   border: none;
   cursor: pointer;
-  display: block;
-  width: 100%;
-  padding: 9px 0 11px;
 }
 
 .modal-submit-container {
@@ -1822,25 +1847,14 @@ img {
   background-color: var(--basic-modal-background);
 }
 
-.modal-popup-map {
-  display: none; 
+.modal-popup-map { 
   width: 943px;
   height: 449px;
   box-sizing: border-box;
   border-top: 6px solid var(--basic-red);
-  z-index: 2;
-  
+  z-index: 2; 
 }
 
-.modal-popup-map img {
-  position: relative;
-}
-
-.modal-popup-map .close-button {
-  position: absolute;
-  top: 10px;
-  right: 5px;
-  cursor: pointer;
-  background-color: transparent;
+.modal-popup-map iframe {
   border: none;
 }
