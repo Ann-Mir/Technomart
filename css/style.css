@@ -202,7 +202,7 @@ img {
   margin-bottom: 59px;
 }
 
-.button, .full-cart {
+.button-style, .full-cart {
   display: block;
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -255,7 +255,8 @@ img {
   box-shadow: inset 0px -5px 0px var(--basic-logo-inset);
 }
 
-.logo:active .logo-image {
+.logo:active .logo-image,
+.logo:active .footer-logo-image {
   background-color: var(--active-red);
 }
 
@@ -937,12 +938,20 @@ img {
 }
 
 .catalog-link:hover, .catalog-link:focus,
-.modal-submit-button:hover, .modal-submit-button:focus {
+.modal-submit-button:hover, .modal-submit-button:focus,
+.all-best-sellers-button:hover, .all-best-sellers-button:focus,
+.all-vendors-button:hover, .all-vendors-button:focus,
+.about-company-button:hover, .about-company-button:focus,
+.email-us-button:hover, .email-us-button:focus {
   background-color: var(--hover-red);
 }
 
 .catalog-link:active,
-.modal-submit-button:active {
+.modal-submit-button:active,
+.all-best-sellers-button:active,
+.all-vendors-button:active,
+.about-company-button:active,
+.email-us-button:active {
   background-color: var(--active-red);
 }
 
@@ -1136,14 +1145,14 @@ img {
   border-left: 19px solid var(--active-red);
 }
 
-.popular-item-hover {
+.best-sellers-item-hover {
   display: none;
   position: absolute;
   top: 38px;
   left: 41px;
 }
 
-.popular-item-hover button {
+.best-sellers-item-hover button {
   font-family: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -1151,8 +1160,12 @@ img {
   text-transform: uppercase;
 }
 
-.best-sellers-article:hover .popular-item-hover,
-.best-sellers-article:hover .popular-item-hover {
+.best-sellers-article:hover .best-sellers-item-hover,
+.best-sellers-article:hover .best-sellers-item-hover,
+.best-sellers-article:focus .best-sellers-item-hover,
+.best-sellers-article:focus .best-sellers-item-hover,
+.best-sellers-article:focus-within .best-sellers-item-hover,
+.best-sellers-article:focus-within .best-sellers-item-hover {
   display: block;
 }
 
@@ -1452,7 +1465,7 @@ img {
 }
 
 .footer-logo-image {
-  margin: 20px 41px 25px 41px;
+  padding: 20px 41px 25px 41px;
 }
 
 .footer-site-navigation,
