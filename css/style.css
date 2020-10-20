@@ -273,42 +273,33 @@ img {
 .search-form {
   position: relative;
   min-height: 100%;
-  height: 100%;
   width: 271px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: 0;
+}
+
+.search-button {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  background-color: transparent;
+  border: none;
+  outline: none;
   padding: 0;
-}
-
-.search-form:hover,
-.search-form:focus-within {
-  background-color: var(--basic-white);
-}
-
-.search-form:focus-within .searching-icon {
-  fill: var(--basic-red);
-  opacity: 1;
+  cursor: pointer;
 }
 
 .searching-icon {
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  top: 12px;
-  left: 17px;
   fill: var(--basic-white);
+  opacity: 0.3;
 }
 
 .search {
-  position: absolute;
-  top: 11px;
-  left: 43px;
-  padding: 0; 
-  background-color: transparent;
   color: var(--basic-white);
+  outline: none;
   border: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 42px;
+  background-color: transparent;
 }
 
 .search::placeholder {
@@ -316,23 +307,21 @@ img {
   opacity: 1;
 }
 
-.search:focus, .search:focus-within {
-  outline: none;
+.search-form:focus-within .search {
   background-color: var(--basic-white);
-  top: 0;
-  width: 85%;
-  height: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  font: inherit;
-  font-size: 18px;
-  line-height: 24px;
+}
+
+.search-form:focus-within .search::placeholder {
   color: var(--basic-black);
 }
 
-.search:focus::placeholder, .search:focus-within::placeholder {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+.search-form:focus-within .searching-icon{
+  fill: var(--basic-red);
+  opacity: 1;
+}
+
+.search-form:hover .searching-icon {
+  opacity: 1;
 }
 
 .favorites, .cart {
