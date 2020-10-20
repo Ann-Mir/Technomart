@@ -423,6 +423,7 @@ img {
 }
 
 .main-header-contacts {
+  padding-left: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,10 +471,13 @@ img {
 
 .authorization-list {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
-  width: 281px;
+  /*width: 281px;*/
+  min-width: 299px;
+  justify-content: flex-end;
   padding-top: 46px;
+  
 }
 
 .authorization-list-item {
@@ -484,6 +488,7 @@ img {
   line-height: 21px;
   height: 45px;
   background: var(--basic-white);
+  margin-left: 10px;
 }
 
 .login-button, .sign-up-button {
