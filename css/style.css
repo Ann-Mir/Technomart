@@ -1015,12 +1015,13 @@ img {
 
 .best-sellers-article:hover,
 .best-sellers-article:focus,
-.best-sellers-article:hover,
-.best-sellers-article:focus {
+.catalog-article:hover,
+.catalog-article:focus {
   box-shadow: 0px 4px 20px var(--vendor-box-shadow);
 }
 
-.best-sellers-article:hover .goods-image-container {
+.best-sellers-article:hover .goods-image-container,
+.catalog-article:hover .goods-image-container {
   opacity: 0;
 }
 
@@ -1032,7 +1033,8 @@ img {
   align-items: center;
 }
 
-.best-sellers-article-image {
+.best-sellers-article-image,
+.catalog-article-image {
   margin: auto;
 }
 
@@ -1054,7 +1056,8 @@ img {
   line-height: 20px;
 }
 
-.best-sellers-original-price {
+.best-sellers-original-price,
+.catalog-original-price {
   min-height: 18px;
   font-size: 17px;
   line-height: 18px;
@@ -1116,7 +1119,8 @@ img {
   border-left: 19px solid var(--basic-red);
 }
 
-.best-sellers-price-button::before {
+.best-sellers-price-button::before,
+.catalog-price-button::before {
   content: "";
   position: absolute;
   border: 19px solid transparent;
@@ -1126,17 +1130,21 @@ img {
 }
 
 .best-sellers-price-button:hover::before,
-.best-sellers-price-button:focus::before {
+.best-sellers-price-button:focus::before,
+.catalog-price-button:hover::before,
+.catalog-price-button:focus::before {
   border: 19px solid transparent;
   border-left: 19px solid var(--hover-red);
 }
 
-.best-sellers-price-button:active::before {
+.best-sellers-price-button:active::before,
+.catalog-price-button:active::before {
   border: 19px solid transparent;
   border-left: 19px solid var(--active-red);
 }
 
-.best-sellers-item-hover {
+.best-sellers-item-hover,
+.catalog-item-hover {
   display: none;
   position: absolute;
   top: 38px;
@@ -1153,11 +1161,11 @@ img {
 }
 
 .best-sellers-article:hover .best-sellers-item-hover,
-.best-sellers-article:hover .best-sellers-item-hover,
-.best-sellers-article:focus .best-sellers-item-hover,
 .best-sellers-article:focus .best-sellers-item-hover,
 .best-sellers-article:focus-within .best-sellers-item-hover,
-.best-sellers-article:focus-within .best-sellers-item-hover {
+.catalog-article:hover .catalog-item-hover,
+.catalog-article:focus .catalog-item-hover,
+.catalog-article:focus-within .catalog-item-hover {
   display: block;
 }
 
@@ -1181,6 +1189,7 @@ img {
 
 .buy:active {
   background-color: var(--click-green);
+  outline: none;
 }
 
 .bookmarks {
@@ -1200,6 +1209,7 @@ img {
 }
 
 .bookmarks:active {
+  outline: none;
   opacity: 0.5;
 }
 
@@ -1834,6 +1844,13 @@ img {
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 18px;
 }
 
 .purchase-button {
