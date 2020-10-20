@@ -1626,27 +1626,91 @@ img {
   background-color: var(--basic-red);
 }
 
-.user-profile-name {
+.user-profile {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 299px;
+  box-sizing: border-box;
+  padding: 9px 17px 9px 15px;
+  margin-bottom: 7px;
+  border: none;
+  text-align: right;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-profile-link {
+  display: flex;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-}
-
-.user-profile {
+  justify-content: flex-start;
+  align-items: center;
   background-color: var(--basic-white);
+  text-align: center;
 }
 
-.user-profile-name:active {
+.user-profile-icon {
+  margin-right: 21px;
+}
+
+.user-profile-icon,
+.logout-icon {
+  fill: var(--icon-light-grey);
+}
+
+.logout-button {
+  padding: 0;
+  margin: 3px 0 0 20px;
+  box-sizing: border-box;
+  border: none;
+  background: inherit; 
+}
+
+.user-profile-link:active {
   color: var(--icon-light-grey);
+}
+
+.personal-links-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-orders {
+  position: relative;
+  margin-right: 33px;
 }
 
 .user-orders, .user-account {
   font-size: 16px;
   line-height: 18px;
+  text-align: center;
   color: var(--dark-grey);
 }
 
-.user-orders:hover, .user-account:hover {
+.user-orders::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+  top: 7px;
+  right: -17px;
+}
+
+.user-orders:hover, .user-account:hover,
+.user-orders:focus, .user-account:focus {
   color: var(--basic-red);
 }
 
