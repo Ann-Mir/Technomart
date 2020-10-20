@@ -1682,6 +1682,19 @@ img {
   background: inherit; 
 }
 
+.profile-buttons-container:hover .user-profile-icon,
+.profile-buttons-container:focus .user-profile-icon,
+.profile-buttons-container:hover .logout-icon,
+.profile-buttons-container:focus .logout-icon {
+  fill: var(--hover-grey);
+}
+
+.profile-buttons-container:active .user-profile-icon,
+.profile-buttons-container:active .logout-icon {
+  fill: var(--icon-light-grey);
+}
+
+
 .user-profile-link:active {
   color: var(--icon-light-grey);
 }
@@ -1719,8 +1732,17 @@ img {
   color: var(--basic-red);
 }
 
+.personal-links-container:hover .user-orders::after,
+.personal-links-container:focus .user-orders::after {
+  background-color: var(--basic-red);
+}
+
 .user-orders:active, .user-account:active {
   color: var(--icon-light-grey);
+}
+
+.personal-links-container:active .user-orders::after {
+  background-color: var(--icon-light-grey);
 }
 
 /* breadcrumbs */
