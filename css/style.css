@@ -1791,8 +1791,15 @@ img {
 
 /* catalog sections */
 
-.title-container {
+.catalog-title-container {
   background-color: var(--catalog-title-background);
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+}
+
+.catalog-section-title {
+  margin: 0px;
 }
 
 .purchase-button {
