@@ -1796,10 +1796,44 @@ img {
   padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 29px;
+  margin-bottom: 20px;
 }
 
 .catalog-section-title {
   margin: 0px;
+}
+
+.inner-page-columns-container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  margin-bottom: 59px;
+}
+
+.catalog-content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.goods-sort {
+  width: 100%;
+  padding: 10px 14px 10px 19px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: var(--filter-background);
+  margin-bottom: 28px;
+}
+
+.goods-sort-title {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .purchase-button {
