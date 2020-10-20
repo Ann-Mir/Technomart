@@ -137,7 +137,7 @@
 }
 
 .page-body {
-  min-width: 940px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1924,6 +1924,23 @@ img {
   background-color: var(--basic-red);
   border: none;
   color: var(--basic-white);
+}
+
+.perforators-article {
+  min-height: 261px;
+  box-sizing: border-box;
+  padding-top: 64px;
+  padding-bottom: 68px;
+  text-align: left;
+}
+
+.perforators-article-title {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.perforators-text {
+  margin: 0;
 }
 
 /* Modal Index */
