@@ -933,7 +933,8 @@ img {
 .all-best-sellers-button:hover, .all-best-sellers-button:focus,
 .all-vendors-button:hover, .all-vendors-button:focus,
 .about-company-button:hover, .about-company-button:focus,
-.email-us-button:hover, .email-us-button:focus {
+.email-us-button:hover, .email-us-button:focus,
+.proceed-order:hover, .proceed-order:focus {
   background-color: var(--hover-red);
 }
 
@@ -942,7 +943,8 @@ img {
 .all-best-sellers-button:active,
 .all-vendors-button:active,
 .about-company-button:active,
-.email-us-button:active {
+.email-us-button:active,
+.proceed-order:active {
   background-color: var(--active-red);
 }
 
@@ -1830,6 +1832,7 @@ img {
 .goods-sort {
   width: 100%;
   padding: 10px 14px 10px 19px;
+  box-sizing: border-box;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1985,7 +1988,7 @@ img {
   content: "";
   overflow: hidden;
   position: absolute;
-  width: 30px;
+  width: 29px;
   height: 3px;
   background: var(--basic-red);
   right: 1px;
@@ -2100,4 +2103,96 @@ img {
 
 .interactive-map {
   border: none;
+}
+
+.modal-popup-map .close-button {
+  top: 12px;
+}
+
+.modal-added-to-cart {
+  width: 620px;
+  height: 283px;
+  box-sizing: border-box;
+  background-color: var(--basic-white);
+  border-top: 7px solid var(--basic-red);
+  z-index: 2;
+}
+
+.modal-cart-top-container {
+  position: relative;
+  width: 100%;
+  padding-top: 65px;
+  box-sizing: border-box;
+  height: 160px;
+}
+
+.modal-cart-bottom-container {
+  width: 100%;
+  background-color: var(--modal-bottom-background);
+}
+
+.modal-cart-bottom-container {
+  top: 18px;
+}
+
+.modal-cart-title {
+  position: relative;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+  margin: 0;
+  margin-left: 126px;
+}
+
+.modal-cart-title::before {
+  content: url("../img/icon-success.svg");
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -45px;
+  top: -18px;
+}
+
+.modal-added-to-cart .close-button {
+  top: 10px;
+  right: 3px;
+}
+
+.modal-cart-bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 37px 112px 37px 114px;
+  box-sizing: border-box;
+}
+
+.proceed-order,
+.proceed-shopping {
+  min-width: 192px;
+  min-height: 38px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-style: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.proceed-order {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  margin-right: 10px;
+}
+
+.proceed-shopping {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  margin: 0;
 }
