@@ -1831,7 +1831,8 @@ img {
 
 .goods-sort {
   width: 100%;
-  padding: 10px 14px 10px 19px;
+  min-height: 38px;
+  padding: 9px 14px 10px 20px;
   box-sizing: border-box;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1840,14 +1841,108 @@ img {
   text-transform: uppercase;
   background-color: var(--filter-background);
   margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .goods-sort-title {
-  margin: 0;
+  margin: 0 140px 0 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.sorting-options-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sorting-by-price {
+  margin-right: 70px;
+}
+
+.sorting-option-link {
+  position: relative;
+  display: block;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-by-type {
+  margin-right: 65px;
+}
+
+.sorting-by-function {
+  margin-right: 46px;
+}
+
+.sorting-ascending-order {
+  margin-right: 21px;
+}
+
+.sorting-descending-order-link:hover:not(.sorting-option-link-current),
+.sorting-ascending-order-link:hover:not(.sorting-option-link-current),
+.sorting-by-price-link:hover:not(.sorting-option-link-current),
+.sorting-by-type-link:hover:not(.sorting-option-link-current),
+.sorting-by-function-link:hover:not(.sorting-option-link-current) {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.sorting-descending-order-link:active:not(.sorting-option-link-current),
+.sorting-ascending-order-link:active:not(.sorting-option-link-current),
+.sorting-by-price-link:active:not(.sorting-option-link-current),
+.sorting-by-type-link:active:not(.sorting-option-link-current),
+.sorting-by-function-link:active:not(.sorting-option-link-current) {
+  color: var(--basic-red);
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sorting-order-icon {
+  fill: var(--icon-light-grey);
+}
+
+.sorting-option-link-current {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-red);
+  opacity: 1;
+  border: none;
+}
+
+.sorting-option-link-current .sorting-order-icon {
+  fill: var(--basic-red);
+}
+
+.sorting-ascending-order:hover .sorting-order-icon,
+.sorting-ascending-order:focus .sorting-order-icon,
+.sorting-descending-order:hover .sorting-order-icon,
+.sorting-descending-order:focus .sorting-order-icon {
+  fill: var(--basic-black);
+}
+
+.sorting-ascending-order:active .sorting-order-icon,
+.sorting-descending-order:active .sorting-order-icon {
+  fill: var(--basic-red);
+}
+
+.sorting-ascending-order-link,
+.sorting-descending-order-link {
+  border: none;
 }
 
 .catalog-list {

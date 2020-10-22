@@ -42,7 +42,7 @@
           </div>
           <div class="user-profile">
             <div class="profile-buttons-container">
-              <a class="user-profile-link" href="">
+              <a class="user-profile-link" href="#">
                 <svg class="user-profile-icon" width="20" height="18" viewbox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" />
@@ -58,8 +58,8 @@
               </button>
             </div>
             <div class="personal-links-container">
-              <a class="user-orders" href="">Мои заказы</a>
-              <a class="user-account" href="">Личный кабинет</a>
+              <a class="user-orders" href="#">Мои заказы</a>
+              <a class="user-account" href="#">Личный кабинет</a>
             </div>
           </div>
         </div>
@@ -94,10 +94,20 @@
 	<main class="page-content">
     <div class="container">
       <ul class="special-list catalog-breadcrumbs">
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-home" href="index.html"><span class="visually-hidden">Домой</span></a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-catalog" href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-instruments" href="">Инструмент</a></li>
-        <li class="breadcrumbs-item breadcrumbs-current"><a class="breadcrumbs-link breadcrumbs-current-link breadcrumbs-perforator">Перфораторы</a></li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
+            <span class="visually-hidden">Домой</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-catalog" href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-instruments" href="#">Инструмент</a>
+        </li>
+        <li class="breadcrumbs-item breadcrumbs-current">
+          <a class="breadcrumbs-link breadcrumbs-current-link breadcrumbs-perforator">Перфораторы</a>
+        </li>
       </ul>
       <div class="catalog-title-container">
         <h1 class="catalog-section-title">Перфораторы</h1>
@@ -109,8 +119,40 @@
         </section>
         <div class="catalog-content-column">
           <section class="goods-sort">
-            <h2 class="goods-sort-title">Сортировка</h2>
-            <!-- Здесь будет форма сортировки -->
+            <h2 class="goods-sort-title">Сортировка:</h2>
+            <ul class="special-list sorting-options-list">
+              <li class="sorting-option sorting-by-price">
+                <a class="sorting-option-link sorting-by-price-link sorting-option-link-current" href="#">
+                  По цене
+                </a>
+              </li>
+              <li class="sorting-option sorting-by-type">
+                <a class="sorting-option-link sorting-by-type-link" href="#">
+                  По типу
+                </a>
+              </li>
+              <li class="sorting-option sorting-by-function">
+                <a class="sorting-option-link sorting-by-function-link" href="#">
+                  По функционалу
+                </a>
+              </li>
+              <li class="sorting-option sorting-ascending-order">
+                <a class="sorting-option-link sorting-option-link-current sorting-ascending-order-link" href="#">
+                  <svg class="sorting-order-icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" arial-label="Сортировка по возрастанию">
+                    <path d="M5.5 0L11 10L0 10" />
+                  </svg>
+                </a>
+              </li>
+              <li class="sorting-option sorting-descending-order"> 
+                <a class="sorting-option-link sorting-descending-order-link" href="#"> 
+                  <svg class="sorting-order-icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" arial-label="Сортировка по убыванию">
+                    <path d="M5.5 10L0 0H11" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </section>
           <section class="catalog-search-result">
             <h2 class="visually-hidden">Результаты поиска по каталогу</h2>
@@ -122,7 +164,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 6000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="catalog-original-price">30500 P.</p>
                     <a class="button-style catalog-price-button" href="#">25500 Р.</a>
                   </div>
@@ -139,7 +181,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 6000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="catalog-original-price">30500 P.</p>
                     <a class="button-style catalog-price-button" href="#">25500 Р.</a>
                   </div>
@@ -156,7 +198,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 6000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="catalog-original-price">30500 P.</p>
                     <a class="button-style catalog-price-button" href="#">25500 Р.</a>
                   </div>
@@ -173,7 +215,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 3000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
                     <p class="catalog-original-price">22500 P.</p>
                     <a class="button-style catalog-price-button" href="#">15500 Р.</a>
                   </div>
@@ -190,7 +232,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 6000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="catalog-original-price">30500 P.</p>
                     <a class="button-style catalog-price-button" href="#">25500 Р.</a>
                   </div>
@@ -207,7 +249,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 2000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
                     <p class="catalog-original-price"></p>
                     <a class="button-style catalog-price-button" href="#">12500 Р.</a>
                   </div>
@@ -224,7 +266,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 3000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
                     <p class="catalog-original-price">22500 P.</p>
                     <a class="button-style catalog-price-button" href="#">15500 Р.</a>
                   </div>
@@ -241,7 +283,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 6000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="catalog-original-price">30500 P.</p>
                     <a class="button-style catalog-price-button" href="#">25500 Р.</a>
                   </div>
@@ -258,7 +300,7 @@
                       alt="Перфоратор BOSCH BFG 6000">
                   </div>
                   <div class="product-container">
-                    <h3><a class="product-link" href="">Перфоратор BOSCH BFG 2000</a></h3>
+                    <h3><a class="product-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
                     <p class="catalog-original-price"></p>
                     <a class="button-style catalog-price-button" href="#">12500 Р.</a>
                   </div>
