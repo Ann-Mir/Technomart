@@ -1989,7 +1989,7 @@ img {
 
 .filter-item-power {
   padding: 0;
-  margin: 17px 0 18px;
+  margin: 17px 0 15px;
   border: none;
 }
 
@@ -2042,6 +2042,19 @@ img {
 .filter-input-radio:disabled + .filter-label::after {
   opacity: 0.52;
   pointer-events: none;
+}
+
+.filter-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 78px 10px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid var(--pagination-border);
+  background-color: var(--basic-white);
 }
 
 .catalog-content-column {
