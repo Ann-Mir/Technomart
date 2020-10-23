@@ -114,8 +114,30 @@
       </div>
       <div class="inner-page-columns-container">
         <section class="catalog-filter">
-          <h2>Фильтр:</h2>
-          <!-- Здесь будет форма фильтра -->
+          <h2 class="filter-title">Фильтр:</h2>
+          <form class="filter-form" method="get" action="#">
+            <fieldset class="filter-item filter-item-price">
+              <legend class="filter-legend">Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" aria-label="Изменить минимальную стоимость"></div>
+                  <div class="toggle toggle-max" tabindex="0" aria-label="Изменить максимальную стоимость"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <span>—</span>
+                  <label class="max-price">
+                    <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </section>
         <div class="catalog-content-column">
           <section class="goods-sort">
