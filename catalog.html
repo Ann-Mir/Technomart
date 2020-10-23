@@ -128,14 +128,28 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    <input type="number" name="min-price" value="0">
+                    <input class="price-input" type="number" name="min-price" value="0">
                   </label>
                   <span>—</span>
                   <label class="max-price">
-                    <input type="number" name="max-price" value="30000">
+                    <input class="price-input" type="number" name="max-price" value="30000">
                   </label>
                 </div>
               </div>
+            </fieldset>
+            <fieldset class="filter-item-power">
+              <legend class="filter-legend">Питание:</legend>
+              <ul class="special-list filter-options-power">
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" id="filter-option-battery" type="radio" name="filter-power"
+                    checked>
+                  <label class="filter-radio-label" for="filter-option-battery">Аккумуляторные</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" id="filter-option-ac" type="radio" name="filter-power">
+                  <label class="filter-radio-label" for="filter-option-ac">Сетевые</label>
+                </li>
+              </ul>
             </fieldset>
           </form>
         </section>
