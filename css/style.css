@@ -1264,10 +1264,25 @@ img {
   grid-template-columns: 1fr 2fr;
 }
 
+.services-slide {
+  display: none;
+}
+
+.service-active {
+  display: block;
+}
+
 .delivery-slide {
   background-image: url("../img/delivery-service.svg");
   background-repeat: no-repeat;
   background-position: 150px 55px;
+}
+
+.warranty-slide {
+  background-image: url("../img/warranty-service.svg");
+  background-size: 389px 283px;
+  background-repeat: no-repeat;
+  background-position: 240px 31px;
 }
 
 .services-title, .services-slider-title, .about-company-title, .contacts-title, .perforators-article-title {
@@ -1280,9 +1295,14 @@ img {
 .services-title {
   margin-top: 64px;
 }
+
 .services-slider-title {
   color: var(--dark-grey);
   margin-top: 35px;
+}
+
+.warranty-slide .services-slider-title {
+  margin-bottom: 24px;
 }
 
 .services-text, .services-slider-text, .company-introduction, .contacts-text, .perforators-text {
