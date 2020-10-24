@@ -936,7 +936,8 @@ img {
 .all-vendors-button:hover, .all-vendors-button:focus,
 .about-company-button:hover, .about-company-button:focus,
 .email-us-button:hover, .email-us-button:focus,
-.proceed-order:hover, .proceed-order:focus {
+.proceed-order:hover, .proceed-order:focus,
+.credit-button:hover, .credit-button:focus {
   background-color: var(--hover-red);
 }
 
@@ -946,7 +947,8 @@ img {
 .all-vendors-button:active,
 .about-company-button:active,
 .email-us-button:active,
-.proceed-order:active {
+.proceed-order:active,
+.credit-button:active {
   background-color: var(--active-red);
 }
 
@@ -1274,6 +1276,7 @@ img {
 
 .delivery-slide {
   background-image: url("../img/delivery-service.svg");
+  background-size: 468px 261px;
   background-repeat: no-repeat;
   background-position: 150px 55px;
 }
