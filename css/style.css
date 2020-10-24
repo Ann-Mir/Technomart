@@ -548,6 +548,7 @@ img {
   width: 940px;
   box-sizing: border-box;
   background-color: var(--dark-grey);
+  box-shadow: inset 0px -5px 0px var(--darken-grey);
   font-size: 18px;
   min-height: 60px;
   margin-left: auto;
