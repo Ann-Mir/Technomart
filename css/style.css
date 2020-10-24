@@ -1285,6 +1285,13 @@ img {
   background-position: 232px 31px;
 }
 
+.credit-slide {
+  background-image: url("../img/credit-service.svg");
+  background-size: 465px 285px;
+  background-repeat: no-repeat;
+  background-position: 155px 35px;
+}
+
 .services-title, .services-slider-title, .about-company-title, .contacts-title, .perforators-article-title {
   font-size: 30px;
   line-height: 30px;
@@ -1303,6 +1310,10 @@ img {
 
 .warranty-slide .services-slider-title {
   margin-bottom: 24px;
+}
+
+.credit-slide .services-slider-title {
+  margin-bottom: 28px;
 }
 
 .services-text, .services-slider-text, .company-introduction, .contacts-text, .perforators-text {
@@ -1373,7 +1384,13 @@ img {
 }
 
 .credit-button {
+  display: block;
   background-color: var(--credit-button-red);
+  width: 195px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 27px;
+  border-radius: 2px;
 }
 
 .about-container {
