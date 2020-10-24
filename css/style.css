@@ -1738,21 +1738,27 @@ img {
   background: inherit; 
 }
 
-.profile-buttons-container:hover .user-profile-icon,
-.profile-buttons-container:focus .user-profile-icon,
-.profile-buttons-container:hover .logout-icon,
-.profile-buttons-container:focus .logout-icon {
+.user-profile-link:hover .user-profile-icon,
+.user-profile-link:focus .user-profile-icon {
   fill: var(--hover-grey);
 }
 
-.profile-buttons-container:active .user-profile-icon,
-.profile-buttons-container:active .logout-icon {
+.logout-button:hover .logout-icon,
+.logout-button:focus .logout-icon {
+  fill: var(--hover-grey);
+}
+
+.logout-button:active .logout-icon {
   fill: var(--icon-light-grey);
 }
 
 
 .user-profile-link:active {
   color: var(--icon-light-grey);
+}
+
+.user-profile-link:active .user-profile-icon {
+  fill: var(--icon-light-grey);
 }
 
 .personal-links-container {
@@ -2095,6 +2101,7 @@ img {
   text-transform: uppercase;
   border: 1px solid var(--pagination-border);
   background-color: var(--basic-white);
+  cursor: pointer;
 }
 
 .catalog-content-column {
