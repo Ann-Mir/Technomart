@@ -1565,8 +1565,8 @@ img {
   margin-left: 59px;
 }
 
-.footer-site-navigation-item:first-child, 
-.footer-catalog-navigation-item:first-child  {
+.footer-site-navigation-item:nth-child(5n - 4), 
+.footer-catalog-navigation-item:nth-child(5n - 4)  {
   margin-left: 0;
 }
 
