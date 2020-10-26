@@ -1566,7 +1566,7 @@ img {
 }
 
 .footer-site-navigation-item:nth-child(5n - 4), 
-.footer-catalog-navigation-item:nth-child(5n - 4)  {
+.footer-catalog-navigation-item:nth-child(4n - 3)  {
   margin-left: 0;
 }
 
