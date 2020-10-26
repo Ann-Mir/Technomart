@@ -205,7 +205,7 @@ img {
   margin-bottom: 59px;
 }
 
-.button-style, .full-cart {
+.button-style, .full-cart, .full-favorites {
   display: block;
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -1016,7 +1016,7 @@ img {
   width: 220px;
   min-height: 318px;
   border: 1px solid var(--cards-border);
-  padding-bottom: 21px;
+  padding-bottom: 18px;
   padding-top: 6px;
   display: flex;
   flex-direction: column;
@@ -1076,7 +1076,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-  margin: 7px auto 14px auto;
+  margin: 9px auto 13px auto;
 }
 
 .best-sellers-item-title, .catalog-item-title {
@@ -1085,6 +1085,7 @@ img {
   margin-right: 17px;
   margin-bottom: 6px;
   margin-left: 18px;
+  font-weight: 700;
 }
 
 .product-link, .catalog-item-link {
@@ -1105,11 +1106,15 @@ img {
   text-decoration: line-through;
 }
 
+.hidden-price {
+  visibility: hidden;
+}
+
 .best-sellers-price-button, .catalog-price-button {
   width: 121px;
   display: block;
   position: relative;
-  padding: 10px 20px 10px 32px;
+  padding: 10px 20px 10px 30px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   color: var(--basic-white);
@@ -1120,7 +1125,7 @@ img {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-left: -5px;
+  margin-left: -9px;
 }
 
 .best-sellers-price-button::after,
@@ -1604,7 +1609,7 @@ img {
   display: grid;
   grid-template-columns: 376px auto min-content min-content;
   height: 100%;
-  padding: 35px 0 35px 0;
+  padding: 35px 0 35px 10px;
   box-sizing: border-box;
 }
 
@@ -1627,7 +1632,7 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-left: 13px;
+  padding-left: 13px; 
 }
 
 .social-button {
@@ -1649,12 +1654,12 @@ img {
 }
 
 .footer-feedback {
-  margin-right: 50px;
+  margin-right: 51px;
 }
 
 .footer-made-by {
   margin: 0;
-  padding-right: 14px;
+  padding-right: 23px;
 }
 
 .footer-made-by,
@@ -1884,6 +1889,10 @@ img {
   text-transform: uppercase;
 }
 
+.filter-item {
+  margin-left: 0;
+}
+
 .filter-title {
   margin: 0;
   padding: 10px 18px;
@@ -1894,7 +1903,6 @@ img {
 }
 
 .filter-item:not(:last-child) {
-  padding: 0 0 25px 0;
   border: none;
   border-bottom: 1px solid var(--pagination-border);
 }
@@ -1908,7 +1916,7 @@ img {
 
 .filter-item-price {
   margin-bottom: 15px;
-  padding-bottom: 24px;
+  padding: 0 0 25px 0;
 }
 
 .filter-item-price .filter-legend {
@@ -1986,8 +1994,7 @@ img {
 }
 
 .filter-item-vendors {
-  padding-left: 0;
-  padding-bottom: 26px;
+  padding: 0 0 27px 0;
   margin-bottom: 18px;
   border-bottom: 1px solid var(--filter-border-color);
 }
@@ -2048,7 +2055,7 @@ img {
 }
 
 .filter-options-power {
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .filter-radio {
@@ -2065,7 +2072,7 @@ img {
   width: 25px;
   height: 25px;
   top: -2px;
-  left: -33px;
+  left: -35px;
   border: 3px solid var(--icon-light-grey);
   border-radius: 50%;
   box-sizing: border-box;
@@ -2077,7 +2084,7 @@ img {
   width: 9px;
   height: 9px;
   top: 6px;
-  left: -25px;
+  left: -27px;
   background-color: var(--icon-light-grey);
   border-radius: 50%;
   box-sizing: border-box;
