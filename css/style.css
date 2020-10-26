@@ -1063,6 +1063,8 @@ img {
 .best-sellers-article-image,
 .catalog-article-image {
   margin: auto;
+  object-fit: contain;
+  background-color: var(--basic-white);
 }
 
 .product-container {
@@ -2057,6 +2059,11 @@ img {
   left: -35px;
   background-image: url("../img/checkbox-on.svg");
   opacity: 0.78;
+}
+
+.filter-input:focus + .filter-label::before {
+  outline: thin dotted;
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 .filter-input-checkbox:hover + .filter-label::before,
