@@ -86,6 +86,7 @@
   --header-background-light-grey: #F3F7F9;
   --phone-icon-grey: #B7BFC8;
   --icon-light-grey: #C5C5C5;
+  --logo-focus-shadow: #8D1E26;
   /* catalog checkbox icons as well */
   --nav-item-click: #1D2739;
   --user-nav-click: #161D29;
@@ -249,6 +250,7 @@ img {
 }
 
 .logo {
+  display: block;
   cursor: pointer;
 }
 
@@ -256,6 +258,11 @@ img {
   padding: 12px 56px 17px 57px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--basic-logo-inset);
+}
+
+.logo:focus {
+  box-shadow: 0px 5px 5px var(--logo-focus-shadow);
+  background-color: var(--hover-red);
 }
 
 .logo:active .logo-image,
@@ -290,6 +297,10 @@ img {
   cursor: pointer;
 }
 
+.search-button:focus .searching-icon {
+  fill: var(--basic-white);
+}
+
 .searching-icon {
   fill: var(--basic-white);
   opacity: 0.3;
@@ -310,10 +321,12 @@ img {
   opacity: 1;
 }
 
+.search-form:focus-within .search,
 .search-form:focus-within .search {
   background-color: var(--basic-white);
 }
 
+.search-form:focus-within .search::placeholder,
 .search-form:focus-within .search::placeholder {
   color: var(--basic-black);
 }
@@ -1128,16 +1141,6 @@ img {
   margin-left: -9px;
 }
 
-.best-sellers-price-button::after,
-.catalog-price-button::after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 0px;
-  border: 19px solid transparent;
-  border-left: 19px solid var(--basic-red);
-}
-
 .best-sellers-price-button::before,
 .catalog-price-button::before {
   content: "";
@@ -1148,12 +1151,25 @@ img {
   top: 0px;
 }
 
+.best-sellers-price-button:hover,
+.best-sellers-price-button:focus,
+.catalog-price-button:hover,
+.catalog-price-button:focus {
+  background-color: var(--hover-red);
+  outline: none;
+}
+
 .best-sellers-price-button:hover::before,
 .best-sellers-price-button:focus::before,
 .catalog-price-button:hover::before,
 .catalog-price-button:focus::before {
   border: 19px solid transparent;
   border-left: 19px solid var(--hover-red);
+}
+
+.best-sellers-price-button:active,
+.catalog-price-button:active {
+  background-color: var(--active-red);
 }
 
 .best-sellers-price-button:active::before,
@@ -1996,7 +2012,7 @@ img {
 .filter-item-vendors {
   padding: 0 0 27px 0;
   margin-bottom: 18px;
-  border-bottom: 1px solid var(--filter-border-color);
+  /*border-bottom: 1px solid var(--filter-border-color);*/
 }
 
 .filter-item-vendors .filter-legend {
