@@ -2014,7 +2014,6 @@ img {
 .filter-item-vendors {
   padding: 0 0 27px 0;
   margin-bottom: 18px;
-  /*border-bottom: 1px solid var(--filter-border-color);*/
 }
 
 .filter-item-vendors .filter-legend {
