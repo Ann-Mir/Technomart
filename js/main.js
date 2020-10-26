@@ -19,19 +19,6 @@ try {
   isStorageSupport = false;
 }
 
-
-const popupMap = document.querySelector(".modal-popup-map");
-const modalCart = document.querySelector(".modal-added-to-cart");
-const popupMapCloseButton = popupMap.querySelector(".close-button");
-
-const map = document.querySelector(".map");
-const buyButton = document.querySelector(".buy");
-
-
-
-/*const modalCartCloseButton = modalCart.querySelector(".close-button");*/
-console.log(feedBackForm);
-
 emailUsButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalFeedBack.classList.add("modal-show");
@@ -44,16 +31,6 @@ emailUsButton.addEventListener("click", function(evt) {
     userEmail.value = storageUserEmail;
     userMessage.focus();
   }
-});
-
-map.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popupMap.classList.add("modal-show");
-});
-
-buyButton.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalCart.classList.add("modal-show");
 });
 
 modalFeedBackCloseButton.addEventListener("click", function(evt) {
@@ -75,6 +52,15 @@ feedBackForm.addEventListener("submit", function (evt) {
   }
 });
 
+const popupMap = document.querySelector(".modal-popup-map");
+const popupMapCloseButton = popupMap.querySelector(".close-button");
+const map = document.querySelector(".map");
+
+map.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupMap.classList.add("modal-show");
+});
+
 popupMapCloseButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupMap.classList.remove("modal-show");
@@ -94,8 +80,3 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-/*
-modalCartCloseButton.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalCart.classList.remove("modal-show");
-}) */
