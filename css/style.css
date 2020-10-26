@@ -2609,7 +2609,7 @@ img {
   min-height: 38px;
   padding-top: 11px;
   padding-bottom: 9px;
-  font-style: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
