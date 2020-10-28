@@ -1603,6 +1603,10 @@ img {
   margin-bottom: 28px;
 }
 
+.services-text {
+  max-width: 400px;
+}
+
 .services-text, .services-slider-text, .company-introduction, .contacts-text, .perforators-text {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1959,12 +1963,12 @@ img {
 }
 
 .footer-copyright {
+  max-width: 235px;
   font-size: 16px;
   line-height: 19px;
   -ms-grid-column: 1;
   grid-column: 1/1;
   margin: 0;
-  padding-top: 1px;
   padding-left: 1px;
 }
 
