@@ -2627,6 +2627,14 @@ img {
   margin-right: 21px;
 }
 
+.sorting-by-price-link:hover:not(.sorting-option-link-current),
+.sorting-by-type-link:hover:not(.sorting-option-link-current),
+.sorting-by-function-link:hover:not(.sorting-option-link-current) {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+
 .sorting-descending-order-link:hover:not(.sorting-option-link-current),
 .sorting-ascending-order-link:hover:not(.sorting-option-link-current),
 .sorting-by-price-link:hover:not(.sorting-option-link-current),
@@ -2643,7 +2651,12 @@ img {
 .sorting-by-function-link:active:not(.sorting-option-link-current) {
   color: var(--basic-red);
   opacity: 1;
-  border-bottom: none;
+}
+
+.sorting-by-price-link:active:not(.sorting-option-link-current),
+.sorting-by-type-link:active:not(.sorting-option-link-current),
+.sorting-by-function-link:active:not(.sorting-option-link-current) {
+  border-bottom: 1px solid transparent;
 }
 
 .sorting-order-icon {
