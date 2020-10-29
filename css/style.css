@@ -1385,6 +1385,7 @@ img {
 
 .buy,
 .bookmarks {
+  display: block;
   font-family: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -1413,6 +1414,7 @@ img {
           box-sizing: border-box;
   width: 135px;
   height: 38px;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
@@ -1432,11 +1434,11 @@ img {
   background-color: var(--basic-white);
   border-radius: 2px;
   border: 3px solid var(--basic-green);
-  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 135px;
   height: 38px;
+  padding: 7px;
 }
 
 .bookmarks:hover,
