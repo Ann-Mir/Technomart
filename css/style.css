@@ -1560,6 +1560,10 @@ img {
   display: block;
 }
 
+.services-slider-text {
+  max-width: 325px;
+}
+
 .delivery-slide {
   background-image: url("../img/delivery-service.svg");
   background-size: 468px 261px;
